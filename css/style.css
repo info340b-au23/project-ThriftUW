@@ -66,7 +66,6 @@ header .search button {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 /* Main posts */
 #posts {
     background-color: #F7EDDE;
@@ -106,8 +105,6 @@ p, dl {
     margin-bottom: 1rem;
 }
 
-=======
->>>>>>> main
 /* Footer */
 footer {
     color: white;
@@ -126,10 +123,7 @@ footer p:last-child {
     padding-top: 8px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
+
 /* post page */
 body .card{
     justify-content: center;
@@ -162,11 +156,7 @@ body .card{
     margin: 0%;
     border-radius: 1em;
 }
-<<<<<<< HEAD
 
-=======
-=======
->>>>>>> main
 /*Account Page Work*/
 
 .flex-container-AccountPage {
@@ -179,7 +169,6 @@ body .card{
   display: flex; /* or inline-flex */
   flex-direction: row;
   height: 100%
-  background-color: white;
 }
 
 
@@ -187,18 +176,18 @@ body .card{
     display: flex;
     flex-direction: column;
     flex: 1;
-
+    background-color: #F7EDDE;
 }
 
 .section_1_Profile_Hamburger {
     display: flex;
     width:auto;
-
+    background-color: #F7EDDE;
 }
 
 .section_2_Profile_Picture {
-    gap:50px;
-    margin:50px;
+    gap:20px;
+    margin:20px;
     display: flex;
     flex-direction: row;
 }
@@ -207,7 +196,7 @@ body .card{
 
 }
 
-<<<<<<< HEAD
+
 @media (min-width: 598px) {
     .dropdown{
         display: block;
@@ -243,7 +232,8 @@ body .card{
 
 .section_2_Profile_Picture p {
 justify-content: center;
-=======
+}
+
 .section_2_Profile_Picture_item_2 img {
     width: 200px;
     height: 200px;
@@ -252,14 +242,13 @@ justify-content: center;
 
 .section_2_Profile_Picture_item_3 {
 
->>>>>>> main
+
 }
 
 .section_2_Profile_Posts {
     flex-basis: auto;
     padding: 1em;
     justify-content: center;
-    text-align: center;
 }
 
 
@@ -313,7 +302,4 @@ html {
 }
 
 
-<<<<<<< HEAD
-=======
->>>>>>> 224d2380ed35f677e07e6870fc102fa50763af0f
->>>>>>> main
+

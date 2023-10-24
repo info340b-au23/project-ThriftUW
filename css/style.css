@@ -35,6 +35,7 @@ header {
 header nav ul {
     display: flex;
     list-style: none;
+
 }
 
 header nav li {

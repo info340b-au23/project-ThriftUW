@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ethan, Nikola, Nikki, Anita">
+  <meta name="description" content="ThritUW - A project for UW Campus Thrift Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/searchstyle.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <title>Out-Of-Fits.UW</title>
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <h1>Out-Of-Fits</h1>
+      <h2>Search Page</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="posts.html">Post Fits</a></li>
+        <li><a href="sell.html">Sell Items</a></li>
+        <li><a href="reccomended.html">Reccomended</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html">Login</a>
+        <li><a href="saved.html">Saved</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search Profiles">
+      <button>Go</button>
+    </div>
+  </header>
+  <main>
+    <section id="filters">
+      <div class="filter-group">
+          <label for="season">Season:</label>
+          <select id="season">
+              <option value="all">All</option>
+              <option value="summer">Summer</option>
+              <option value="fall">Fall</option>
+              <option value="winter">Winter</option>
+              <option value="spring">Spring</option>
+          </select>
+      </div>
+      <div class="filter-group">
+          <label for="grade-level">Grade Level:</label>
+          <select id="grade-level">
+              <option value="all">All</option>
+              <option value="freshman">Freshman</option>
+              <option value="sophomore">Sophomore</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+          </select>
+      </div>
+      <div class="filter-group">
+        <label for="size">Size:</label>
+        <select id="size">
+            <option value="all">All</option>
+            <option value="XXS">XXS</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="0">0</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="color">Color:</label>
+        <select id="color">
+            <option value="all">All</option>
+            <option value="brown">Brown</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="red">Red</option>
+            <option value="gold">Gold</option>
+            <option value="silver">Silver</option>
+            <option value="pink">Pink</option>
+        </select>
+      </div><div class="filter-group">
+        <label for="brands">Popular Brands:</label>
+        <select id="brands">
+            <option value="all">All</option>
+            <option value="urban outfitters">Urban Outfitters</option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="brandy melville">Brandy Melville</option>
+            <option value="pacsun">Pacsun"</option>
+            <option value="H&M">H&M</option>
+            <option value="princess polly">Princess Polly</option>
+            <option value="abercrombie & fitch">Abercrombie & Fitch</option>
+            <option value="zara">Zara</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="condition">Condition:</label>
+        <select id="condition">
+            <option value="all">All</option>
+            <option value="brand new">Brand New</option>
+            <option value="like new">Like New</option>
+            <option value="used great">Used: Great</option>
+            <option value="used good">Used: Good</option>
+            <option value="used fair">Used: Fair</option>
+        </select>
+      </div>
+    </section>
+  
+
+    <section id="posts">
+      <div class="container">
+        <dl>
+          <dt>Summer Bottoms  </dt>
+          <dd>
+            <img src="img/outfit1.jpeg" alt="outfit1">
+            <p>Thrifted glasses #Red Light</p>
+            <p>Thrifted Sweater #Crossroads</p>
+            <p>White Long Sleeve Shirt #Uniqlo</p>
+            <p>Light Brown Skirt #Uniqlo</p>
+            <p>Thrifted Tote Bag #Goodwill</p>
+          </dd>
+          <dt>Abakada Hoodie, Starting @ $50, Listed 3 weeks ago</dt>
+          <dd>
+            <img src="img/sell1.jpg" alt="hoodie1">
+            <p>Details: Color #Black, Condition #New, Size #Women's Small, Brand #Abakada</p>
+            <p>User1 notes: Send offers, willing to negotiate price. Only used once, bought online. Limited supply.</p>
+          </dd>
+          <dt>Everyday Work fit!</dt>
+          <dd>
+            <img src="img/outfit2.jpeg" alt="outfit2">
+            <p>Thrifted sunglasses #Crossroads</p>
+            <p>Black Long-sleeve Shirt #H&M</p>
+            <p>Gray Skinny-fit Jeans #Levis</p>
+            <p>Black Shoes #Vans</p>
+            <p>Black Backpack #Flea Market</p>
+            <p>Watch #Online</p>
+          </dd>
+          <dt>Huskies Hoodie, Starting @ $30, Listed 5 days ago</dt>
+          <dd>
+            <img src="img/sell2.jpg" alt="hoodie2">
+            <p>Details: Color #Gray, Condition #Used, Size #Women's Small, Brand #UW</p>
+            <p>User2 notes: Non-negotiable price. Used multiple times. Vintage hand-me down hoodie.</p>
+          </dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

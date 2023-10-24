@@ -61,43 +61,6 @@ header .search button {
     cursor: pointer;
 }
 
-/* Main posts */
-#posts {
-    background-color: #F7EDDE;
-}
-
-#posts dl {
-    margin: 0;
-    padding: 0;
-}
-
-#posts dt {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 1rem;
-}
-
-#posts dd {
-    margin: 0;
-}
-
-#posts img {
-    height: 300px;
-    border-radius: 15px;
-}
-
-.container {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
-p, dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
 /* Footer */
 footer {
     color: white;

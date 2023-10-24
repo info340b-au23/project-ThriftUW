@@ -95,21 +95,34 @@ footer p:last-child {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: red;
+    background-color: #F7EDDE;
 }
 
 .section_1_Profile_Hamburger {
     display: flex;
-    width:20%;
+    width:auto;
+    background-color: #F7EDDE;
 }
 
 .section_2_Profile_Picture {
+    gap:20px;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+}
 
+.section_2_Profile_Picture_item_1 {
 
 }
 
-.section_2_Profile_Picture p {
-justify-content: center;
+.section_2_Profile_Picture_item_2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.section_2_Profile_Picture_item_3 {
+
 }
 
 .section_2_Profile_Posts {

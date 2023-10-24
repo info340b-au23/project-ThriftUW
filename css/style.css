@@ -127,32 +127,21 @@ footer p:last-child {
   height: 100%
 }
 
-.flex-container-HamBurger {
-  display: flex; /* or inline-flex */
-  flex-direction: column;
-  height: 100%
-  flex: 25%;
-}
 
 .flex-container-Profile {
-    display: flex; /* or inline-flex */
+    display: flex;
     flex-direction: column;
-    height: 100%
-    flex: 75%;
+    flex: 1;
+    background-color: red;
 }
 
-.section_1_H_Icon {
-    flex-basis: 100px;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+.section_1_Profile_Hamburger {
+    display: flex;
+    width:20%;
 }
 
 .section_2_Profile_Picture {
-    flex-basis: auto;
-    padding: 1em;
-    justify-content: center;
-    background-color: blue;
+
 
 }
 
@@ -161,8 +150,9 @@ justify-content: center;
 }
 
 .section_2_Profile_Posts {
-
-
+    flex-basis: auto;
+    padding: 1em;
+    justify-content: center;
 }
 
 

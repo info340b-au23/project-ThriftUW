@@ -3,6 +3,9 @@
 body {
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 16px;
+    align-items: center;
+    background-color: #F7EDDE;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +30,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+
 }
 
 /* class head not recognized in Css */
@@ -102,6 +108,9 @@ p, dl {
 footer {
     color: white;
     background-color: #E4CAB4;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 footer p {
@@ -113,3 +122,33 @@ footer p:last-child {
     padding-top: 8px;
 }
 
+/* post page */
+body .card{
+    justify-content: center;
+    margin-bottom: 0;
+    width: auto;
+    height: auto;
+    border-radius: 2em;
+}
+
+.card-body{
+    /*padding: 2em;*/
+    margin: 2em;
+}
+
+.card btn{
+    position: fixed;
+    right: 0%;
+}
+
+.card-body-text{
+    margin: 2em;
+    font-size: x-large;
+    justify-content: left;
+}
+
+.card img{
+    padding: 0;
+    margin: 0%;
+    border-radius: 1em;
+}

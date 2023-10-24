@@ -131,14 +131,14 @@ footer p:last-child {
   display: flex; /* or inline-flex */
   flex-direction: column;
   height: 100%
-  flex-grow: 1;
+  flex: 25%;
 }
 
 .flex-container-Profile {
     display: flex; /* or inline-flex */
     flex-direction: column;
     height: 100%
-    flex-grow: 4;
+    flex: 75%;
 }
 
 .section_1_H_Icon {

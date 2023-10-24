@@ -131,12 +131,14 @@ footer p:last-child {
   display: flex; /* or inline-flex */
   flex-direction: column;
   height: 100%
+  flex-grow: 1;
 }
 
 .flex-container-Profile {
     display: flex; /* or inline-flex */
-    flex-direction: row;
+    flex-direction: column;
     height: 100%
+    flex-grow: 4;
 }
 
 .section_1_H_Icon {
@@ -146,10 +148,21 @@ footer p:last-child {
     border: none;
 }
 
-
-.section_2_P {
+.section_2_Profile_Picture {
     flex-basis: auto;
     padding: 1em;
+    justify-content: center;
     background-color: blue;
+
 }
+
+.section_2_Profile_Picture p {
+justify-content: center;
+}
+
+.section_2_Profile_Posts {
+
+
+}
+
 

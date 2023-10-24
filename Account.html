@@ -27,21 +27,19 @@
       <nav>
           <ul>
               <li><a href="index.html">Main Page</a></li>
-              <li><a href="reccomended.html">Reccomended</a></li>
-              <li><a href="about.html">About</a></li>
               <li><a href="Account.html">Account</a>
           </ul>
       </nav>
       <div class="search">
-          <input type="text" placeholder="Search Profiles">
-          <button>Go</button>
+        <label for="search">Search</label>
+        <input type="text" id="search" name="search">
+        <button aria-label="click to search"><a href="search.html">Go</a></button>
       </div>
   </header>
 
     <main class="flex-container-AccountMAIN">
 
-        <div class="flex-container-HamBurger">
-            <section class="section_1_H_Icon">
+        <div class="section_1_Profile_Hamburger">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         HAMBURGER ICON
@@ -52,16 +50,31 @@
                         <a class="dropdown-item" href="posts.html"> POST FITS </a>
                     </div>
                 </div>
-            </section>
         </div>
 
         <div class="flex-container-Profile">
             <section class="section_2_Profile_Picture">
-                <p>PROFILE IMAGE</p>
+
+                <div class="section_2_Profile_Picture_item_1">
+                    <p>POST # FOLLOW # FOLLOWING #</p>
+                </div>
+
+                <div class="section_2_Profile_Picture_item_2">
+                    <img src="img/outfit2.jpeg" alt="outfit2">
+                </div>
+
+                <div class="section_2_Profile_Picture_item_3">
+                    <p>ABOUT</p>
+
+                </div>
+
+
             </section>
 
             <section class="section_2_Profile_Posts">
+
                 <p>POSTS</p>
+
             </section>
         </div>
 

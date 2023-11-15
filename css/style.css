@@ -185,4 +185,39 @@ html {
     height: 100%;
 }
 
+/* media queries */
+@media (min-width: 598px) {
+
+    .dropdown {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    /*header h2{
+        display: none;
+    }*/
+}
+
+/*@media (min-width: 992px) {
+    .dropdown{
+        display: none;
+    }
+
+
+    header nav {
+        display: block;
+    }
+
+    header h2{
+        display: block;
+    }
+
+    head{
+        display: contents;
+    }
+}*/
+
 

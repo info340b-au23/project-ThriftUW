@@ -16,20 +16,22 @@
         <h2>Your UW Campus Thrift Community & Marketplace</h2>
     </div>
 </header>
-    <main>
-      <form>
-        <label for="id">ID:</label>
-        <input type="text" id="id" name="id"> /* need required later */
+<main>
+<form action="index.html" method="post">
+    <div class="container">
+        <label><b>User ID</b></label>
+        <input type="text" placeholder="Enter User ID" name="userid" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <a href="index.html">
-          <button type="submit">Sign In</button>
-        </a>
-    </form>
-    </main>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Login</button>
+    </div>
+</form>
+</main>
+
       <footer>
-        <div class="container">
+        <div>
           <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
         </div>
       </footer>

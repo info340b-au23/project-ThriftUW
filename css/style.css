@@ -32,22 +32,6 @@ header {
 
 /* class head not recognized in Css */
 
-header nav ul {
-    display: flex;
-    list-style: none;
-
-}
-
-header nav li {
-    margin: 0px 20px;
-}
-
-header nav a {
-    color: #F7EDDE;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 header .search input {
     padding: 5px;
     border: none;
@@ -186,40 +170,78 @@ html {
 }
 
 
-@media (max-width: 598px) {
 
-    .dropdown{
-        display: block;
-    }
+/* MEDIA QUERY CODE */
 
-    header nav {
-        display: none;
-    }
-
-    /*header h2{
-        display: none;
-    }*/
+.nav-toggle {
+    display: none;
 }
 
-@media (min-width: 598px) {
-    .dropdown{
+.dropdown-btn {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 8px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Dropdown Menu for Smaller Screens */
+@media (max-width: 600px) {
+    .dropdown-btn {
+        display: block;
+    }
+
+    nav ul {
         display: none;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
     }
 
-
-    header nav {
+    nav ul li {
         display: block;
+        text-align: left;
     }
 
-    header h2{
+    .nav-toggle:checked + .dropdown-btn + ul {
         display: block;
-    }
-
-    head{
-        display: contents;
     }
 }
-/* Login */
+
+/* Regular Navbar for Larger Screens */
+@media (min-width: 601px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+}
+
+
+
+
+/* Login Page */
 form {
     background-color: #fff;
     padding: 20px;

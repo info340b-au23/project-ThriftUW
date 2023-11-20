@@ -203,6 +203,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 /* Dropdown Menu for Smaller Screens */
 @media (max-width: 600px) {
     .dropdown-btn {

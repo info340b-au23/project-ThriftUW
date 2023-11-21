@@ -185,7 +185,7 @@ html {
     text-align: center;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: auto;
 }
 
 nav ul {
@@ -201,7 +201,10 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
+    text-align: auto;
+    width: auto;
 }
+
 
 
 /* Dropdown Menu for Smaller Screens */
@@ -309,6 +312,7 @@ label {
     text-align: center;
     margin: auto;
 }
+
 
 /* posts */
 .post {

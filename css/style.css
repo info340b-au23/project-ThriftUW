@@ -1,5 +1,5 @@
 
-/* Body/Headings */
+/* -----------------------------------------BODY AND HEADING CODE---------------------------------------------------- */
 body {
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 16px;
@@ -21,7 +21,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-/* Page header */
 header {
     background-color: #BAA1A7;
     color: #F7EDDE;
@@ -30,24 +29,10 @@ header {
     align-items: center;
 }
 
-/* class head not recognized in Css */
 
-header .search input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-}
 
-header .search button {
-    background-color: #6C4380;
-    color: #F7EDDE;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-/* Footer */
+/* ---------------------------------------------FOOTER CODE---------------------------------------------------------- */
 footer {
     color: white;
     background-color: #E4CAB4;
@@ -62,65 +47,10 @@ footer p:last-child {
     padding-top: 8px;
 }
 
-/*Account Page Work*/
-
-.flex-container-AccountPage {
-  display: flex; /* or inline-flex */
-  flex-direction: column;
-  height: 100%
-}
-
-.flex-container-AccountMAIN {
-  display: flex; /* or inline-flex */
-  flex-direction: row;
-  height: 100%
-  background-color: white;
-}
 
 
-.flex-container-Profile {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+/* --------------------------------------------SEARCH PAGE CODE-------------------------------------------------------*/
 
-}
-
-.section_1_Profile_Hamburger {
-    display: flex;
-    width:auto;
-
-}
-
-.section_2_Profile_Picture {
-    gap:50px;
-    margin:50px;
-    display: flex;
-    flex-direction: row;
-}
-
-.section_2_Profile_Picture_item_1 {
-
-}
-
-.section_2_Profile_Picture_item_2 img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.section_2_Profile_Picture_item_3 {
-
-}
-
-.section_2_Profile_Posts {
-    flex-basis: auto;
-    padding: 1em;
-    justify-content: center;
-    text-align: center;
-}
-
-
-/* Search Page */
 #filters {
     display: flex;
     justify-content: center;
@@ -171,7 +101,7 @@ html {
 
 
 
-/* MEDIA QUERY CODE */
+/*----------------------------------------------MEDIA QUERY CODE------------------------------------------------------*/
 
 .nav-toggle {
     display: none;
@@ -245,7 +175,7 @@ nav ul li a {
 
 
 
-/* Login Page */
+/*----------------------------------------------LOGIN PAGE CODE------------------------------------------------------ */
 form {
     background-color: #fff;
     padding: 20px;
@@ -313,8 +243,7 @@ label {
     margin: auto;
 }
 
-
-/* posts */
+/*--------------------------------------------------POSTS CODE------------------------------------------------------- */
 .post {
     width: 50%;
     height: 10%;

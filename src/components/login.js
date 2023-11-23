@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoginForm = () => {
+export function LoginForm (props) {
   return (
     <main>
       <form id="loginForm" method="post">

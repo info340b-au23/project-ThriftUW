@@ -1,0 +1,262 @@
+/* -----------------------------------------BODY AND HEADING CODE---------------------------------------------------- */
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: #BAA1A7;
+    color: #F7EDDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ---------------------------------------------FOOTER CODE---------------------------------------------------------- */
+footer {
+    color: white;
+    background-color: #E4CAB4;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.25;
+}
+
+footer p:last-child {
+    padding-top: 8px;
+}
+
+
+
+/* --------------------------------------------SEARCH PAGE CODE-------------------------------------------------------*/
+
+#filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #F5F5F5;
+
+}
+
+.filter-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.card {
+    flex: 0 0 250px;
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.card img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card p {
+    padding: 0.5rem 1rem;
+}
+
+html {
+    height: 100%;
+}
+
+
+
+/*----------------------------------------------MEDIA QUERY CODE------------------------------------------------------*/
+
+.nav-toggle {
+    display: none;
+}
+
+.dropdown-btn {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 8px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-align: auto;
+    width: auto;
+}
+
+
+
+/* Dropdown Menu for Smaller Screens */
+@media (max-width: 600px) {
+    .dropdown-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+    }
+
+    .nav-toggle:checked + .dropdown-btn + ul {
+        display: block;
+    }
+}
+
+/* Regular Navbar for Larger Screens */
+@media (min-width: 601px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+}
+
+
+
+
+/*----------------------------------------------LOGIN PAGE CODE------------------------------------------------------ */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.containerLogin {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.loginHead {
+    text-align: center;
+    margin: auto;
+}
+
+/*--------------------------------------------------POSTS CODE------------------------------------------------------- */
+.post {
+    width: 50%;
+    height: 10%;
+
+
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+}
+
+main .posts{
+    align-self: center;
+}

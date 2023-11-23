@@ -1,24 +1,21 @@
-// login.js
-document.addEventListener('DOMContentLoaded', function () {
-    const usersDatabase = {
-        'user1': 'password123',
-        'user2': 'pass456'
-        // Add more users here
-    };
+import React from 'react';
 
-    document.getElementById('loginForm').onsubmit = function(event) {
-        event.preventDefault(); // Prevent form from submitting normally
+const LoginForm = () => {
+  return (
+    <main>
+      <form id="loginForm" method="post">
+        <div className="containerLogin">
+          <label><b>User ID</b></label>
+          <input type="text" placeholder="Enter User ID" name="userid" required />
 
-        const userId = document.querySelector('input[name="userid"]').value;
-        const password = document.querySelector('input[name="password"]').value;
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required />
 
-        if (usersDatabase[userId] && usersDatabase[userId] === password) {
-            alert('Login successful');
-            // Additional actions upon successful login
-            window.location.href = '../../project-draft-1/login.html';
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </main>
+  );
+};
 
-        } else {
-            alert('Invalid User ID or Password');
-        }
-    };
-});
+export default LoginForm;

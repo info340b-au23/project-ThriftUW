@@ -5,7 +5,7 @@ function App(props) {
   return (
       <div>
           <LoginForm/>
-        {/* <Index /> */}
+        { <searchForm /> }
         {/* <DetailPage /> */}
         {/* <SearchPage /> */}
         {/* <AboutPage /> */}

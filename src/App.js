@@ -1,10 +1,9 @@
 import react from 'react';
 import login from './login';
-
 function App(props) {
 return (
      <div>
-       {<login /> }
+       {/* <Index /> */}
        {/* <DetailPage /> */}
        {/* <SearchPage /> */}
        {/* <AboutPage /> */}

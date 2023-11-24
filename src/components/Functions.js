@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
        if (usersDatabase[userId] && usersDatabase[userId] === password) {
-           window.location.href = '../project-draft-1/login.html'; // Redirect to login.html
+           window.location.href = './Components/loggedIn.js'; // Redirect to login.html
        } else {
            alert('Invalid User ID or Password');
        }

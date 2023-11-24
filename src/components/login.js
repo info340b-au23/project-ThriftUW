@@ -2,7 +2,9 @@ import React from 'react';
 
 export function LoginForm (props) {
   return (
+
     <main>
+    <script src="./components/Functions.js"></script>
       <form id="loginForm" method="post">
         <div className="containerLogin">
           <label><b>User ID</b></label>

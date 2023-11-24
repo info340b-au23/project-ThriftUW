@@ -2,6 +2,7 @@ import React from 'react';
 
 export function LoginForm (props) {
   return (
+
     <main>
     <script src='./components/Functions.js'></script>
     

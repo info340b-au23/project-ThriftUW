@@ -1,6 +1,5 @@
-'use strict';
 import React from 'react';
-import '../src/login.js';
+
 
 export function Post (props) {
     return (
@@ -24,21 +23,21 @@ export function Post (props) {
         </header>
   
         <main>
-            <form class="container mt-5" id="addPostForm">
+            <form className="container mt-5" id="addPostForm">
                 <h3>Create Post</h3>
-                <div class="mb-3">
-                    <label for="imageInput" class="form-label">Image URL:</label>
-                    <input type="text" class="form-control" id="imageInput" name="image" required>
+                <div className="mb-3">
+                    <label for="imageInput" className="form-label">Image URL:</label>
+                    <input type="text" className="form-control" id="imageInput" name="image" required/>
                 </div>
-                <div class="mb-3">
-                    <label for="titleInput" class="form-label">Title:</label>
-                    <input type="text" class="form-control" id="titleInput" name="title" required>
+                <div className="mb-3">
+                    <label for="titleInput" className="form-label">Title:</label>
+                    <input type="text" className="form-control" id="titleInput" name="title" required/>
                 </div>
-                <div class="mb-3">
-                    <label for="textInput" class="form-label">Caption:</label>
-                    <textarea class="form-control" id="textInput" name="text" required></textarea>
+                <div className="mb-3">
+                    <label for="textInput" className="form-label">Caption:</label>
+                    <textarea className="form-control" id="textInput" name="text" required></textarea>
                 </div>
-                <div class="filter-group">
+                <div className="filter-group">
                     <label for="season">Season:</label>
                     <select id="season">
                     <option value="all">All</option>
@@ -48,7 +47,7 @@ export function Post (props) {
                     <option value="spring">Spring</option>
                     </select>
                 </div>
-                <div class="filter-group">
+                <div className="filter-group">
                     <label for="grade-level">Grade Level:</label>
                     <select id="grade-level">
                     <option value="all">All</option>
@@ -58,7 +57,7 @@ export function Post (props) {
                     <option value="senior">Senior</option>
                     </select>
                 </div>
-                <div class="filter-group">
+                <div className="filter-group">
                     <label for="size">Size:</label>
                     <select id="size">
                     <option value="all">All</option>
@@ -78,7 +77,7 @@ export function Post (props) {
                     <option value="12">12</option>
                     </select>
                 </div>
-                <div class="filter-group">
+                <div className="filter-group">
                     <label for="color">Color:</label>
                     <select id="color">
                     <option value="all">All</option>
@@ -96,7 +95,7 @@ export function Post (props) {
                     <option value="pink">Pink</option>
                     </select>
                 </div>
-                <div class="filter-group">
+                <div className="filter-group">
                     <label for="brands">Popular Brands:</label>
                     <select id="brands">
                     <option value="all">All</option>
@@ -111,7 +110,7 @@ export function Post (props) {
                     <option value="zara">Zara</option>
                     </select>
                 </div>
-                <div class="filter-group">
+                <div className="filter-group">
                     <label for="condition">Condition:</label>
                     <select id="condition">
                     <option value="all">All</option>
@@ -122,44 +121,44 @@ export function Post (props) {
                     <option value="used fair">Used: Fair</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Post to Timeline</button>
+                <button type="submit" className="btn btn-primary">Post to Timeline</button>
             </form>
             
         
-            <div class="container posts">
-                <div class="card border-light mb-3 mt-5 post">
-                    <div class="card-body">
-                        <img src="img/outfit1.jpeg" class="card-img"
-                            alt="A person posing in a neutral colored outfit.">
+            <div className="container posts">
+                <div className="card border-light mb-3 mt-5 post">
+                    <div className="card-body">
+                        <img src="img/outfit1.jpeg" className="card-img"
+                            alt="A person posing in a neutral colored outfit."/>
 
-                        <div class="card-body-text">
-                            <div class="card-title"> <small class="text-muted">user123</small></div>
-                            <div class="card-text">Autumn Neutral</div>
-                            <a href="" class="btn">❤️</a>
-                            <a href="" class="btn">💬</a>
-                            <a href="" class="btn">🔁</a>
-                            <div class="card-footer bg-transparent"></div>
-                            <p class="card-text"><small class="text-muted">October 14</small></p>
+                        <div className="card-body-text">
+                            <div className="card-title"> <small className="text-muted">user123</small></div>
+                            <div className="card-text">Autumn Neutral</div>
+                            <a href="" className="btn">❤️</a>
+                            <a href="" className="btn">💬</a>
+                            <a href="" className="btn">🔁</a>
+                            <div className="card-footer bg-transparent"></div>
+                            <p className="card-text"><small className="text-muted">October 14</small></p>
                         </div>
                     </div>
                 </div>
             </div>
 
             
-            <div class="container posts">
-                <div class="card border-light mb-3 mt-5 post">
-                    <div class="card-body">
-                        <img src="img/outfit2.jpeg" class="card-img-top"
-                            alt="A person in a black and grey outfit.">
+            <div className="container posts">
+                <div className="card border-light mb-3 mt-5 post">
+                    <div className="card-body">
+                        <img src="img/outfit2.jpeg" className="card-img-top"
+                            alt="A person in a black and grey outfit."/>
 
-                        <div class="card-body-text">
-                            <div class="card-title"> <small class="text-muted">user123</small></div>
-                            <div class="card-text">Black & grey</div>
-                            <a href="" class="btn">❤️</a>
-                            <a href="" class="btn">💬</a>
-                            <a href="" class="btn">🔁</a>
-                            <div class="card-footer bg-transparent"></div>
-                            <p class="card-text"><small class="text-muted">October 14</small></p>
+                        <div className="card-body-text">
+                            <div className="card-title"> <small className="text-muted">user123</small></div>
+                            <div className="card-text">Black & grey</div>
+                            <a href="" className="btn">❤️</a>
+                            <a href="" className="btn">💬</a>
+                            <a href="" className="btn">🔁</a>
+                            <div className="card-footer bg-transparent"></div>
+                            <p className="card-text"><small className="text-muted">October 14</small></p>
                         </div>
                     </div>
 

@@ -3,6 +3,8 @@ import React from 'react';
 export function LoginForm (props) {
   return (
     <main>
+    <script src='./components/Functions.js'></script>
+    
       <form id="loginForm" method="post">
         <div className="containerLogin">
           <label><b>User ID</b></label>
@@ -14,8 +16,9 @@ export function LoginForm (props) {
           <button type="submit">Login</button>
         </div>
       </form>
+
+      
     </main>
   );
 };
 
-//export default LoginForm;

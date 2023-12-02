@@ -27,7 +27,8 @@ export function Home(props){
                         <div className="card">
                             <CardList />
                         </div>
-                        
+
+
                         <div className="card">
                             <img src="img/img2.jpeg" alt="abstract art"/>
                             <p>#summer #bottoms #linen #thrifted</p>

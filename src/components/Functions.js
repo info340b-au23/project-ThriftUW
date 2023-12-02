@@ -1,12 +1,12 @@
 const data = [
               {
-                id: 1,
+                id{1}
                 imageSrc: 'img/img1.jpeg',
                 text: 'I just bought these shorts they are a perfect length!',
                 tags: ['#summer', 'Tag2', 'Tag3'],
               },
               {
-                id: 2,
+                id{2}
                 imageSrc: 'img/img2.jpeg',
                 text: 'These linen pants are so breathable and flowy',
                 tags: ['Tag4', 'Tag5', 'Tag6'],

@@ -1,5 +1,5 @@
 import React from "react";
-
+import {CardList} from './Functions.js'
 export function Home(props){
     
     return (
@@ -24,12 +24,11 @@ export function Home(props){
                 <section id="Posts">
                     <div className="card-container">
                         
-                        <div className="card">
-                            <img src="img/img1.jpeg" alt="abstract art"/>
-                            <p>#summer #jean #shorts #levis</p>
-                            <p>I just bought these shorts they are a perfect length!</p>
-                            <p>@sarahbell333</p>
-                        </div>
+
+                            <div>
+                              <CardList />
+                            </div>
+
 
                         
                         <div className="card">
@@ -98,6 +97,44 @@ export function Home(props){
                     <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
                 </div>
             </footer>
+
+            const data = [
+              {
+                id: 1,
+                imageSrc: 'img/img1.jpeg',
+                text: 'I just bought these shorts they are a perfect length!',
+                tags: ['#summer', 'Tag2', 'Tag3'],
+              },
+              {
+                id: 2,
+                imageSrc: 'https://example.com/image2.jpg',
+                text: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                tags: ['Tag4', 'Tag5', 'Tag6'],
+              },
+              // Add more data as needed
+            ];
+
+            const CardList = () => {
+              return (
+                <div>
+                  {data.map((card) => (
+                    <div key={card.id} className="card">
+                      <img src={card.imageSrc} alt={`Card ${card.id}`} />
+                      <p>{card.text}</p>
+                      <div className="tags">
+                        {card.tags.map((tag, index) => (
+                          <span key={index} className="tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              );
+            };
+
+            export default CardList;
             </body>
     );
 }

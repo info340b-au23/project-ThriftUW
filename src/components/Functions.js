@@ -4,7 +4,7 @@ const data = [
                 imageSrc: 'img/img1.jpeg',
                 text: 'I just bought these shorts they are a perfect length!',
                 tags: ['#summer', 'Tag2', 'Tag3'],
-              },
+              }
 ]
               //{
               //  id: 2,

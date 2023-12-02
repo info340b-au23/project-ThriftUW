@@ -181,7 +181,6 @@ export function searchForm (props) {
             </div>
 
           </div>
-          </div>
         </section>
       </main>
       <footer>

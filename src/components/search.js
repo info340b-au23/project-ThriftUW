@@ -112,7 +112,7 @@ export function searchForm (props) {
 
         <section id="Posts">
           <div className="card-container">
-            <!-- Card 1 -->
+
             <div className="card">
               <img src="img/img1.jpeg" alt="abstract art"/>
               <p>#summer #jean #shorts #levis</p>
@@ -120,7 +120,7 @@ export function searchForm (props) {
               <p>@sarahbell333</p>
             </div>
 
-            <!-- Card 2 -->
+
             <div className="card">
               <img src="img/img2.jpeg" alt="abstract art"/>
               <p>#summer #bottoms #linen #thrifted</p>
@@ -128,7 +128,7 @@ export function searchForm (props) {
               <p>@jamielethly</p>
             </div>
 
-            <!-- Card 3 -->
+
             <div className="card">
               <img src="img/img3.jpeg" alt="abstract art"/>
               <p>#summer #orange #bottoms #pants #funky</p>
@@ -136,7 +136,7 @@ export function searchForm (props) {
               <p>@skielemyeres</p>
             </div>
 
-            <!-- Card 4 -->
+
             <div className="card">
               <img src="img/img4.jpeg" alt="abstract art"/>
               <p>#summer #skirt #bottoms #jean #short</p>
@@ -144,35 +144,35 @@ export function searchForm (props) {
               <p>@maggielowe</p>
             </div>
 
-            <!-- Card 5 -->
+
             <div className="card">
               <img src="img/img6.jpeg" alt="abstract art"/>
               <p>#summer #europe #midi #skirt #floral</p>
               <p>Flowy floral skirts have been all over my fashion pages! I thrifted this at the fremont market!</p>
               <p>@maevecostello</p>
             </div>
-            <!-- Card 6 -->
+
             <div className="card">
               <img src="img/img7.jpeg" alt="abstract art"/>
               <p>#summer #linen #pants #brown #H&M</p>
               <p>This are me in my new linen pants, my girlfriend bought them for me. Have been living in them Bought them on sale for $25.00</p>
               <p>@connormason</p>
             </div>
-            <!-- Card 7 -->
+
             <div className="card">
               <img src="img/img8.jpeg" alt="abstract art"/>
               <p>#summer #jean #shorts #zara #thrifted</p>
               <p>Found these awesome thrifted barely used zara mens jean shorts. Love the color.</p>
               <p>@aidangraceee</p>
             </div>
-            <!-- Card 8 -->
+
             <div className="card">
               <img src="img/img9.jpeg" alt="abstract art"/>
               <p>#summer #shorts #graphics #brown</p>
               <p>Kinda interesting shorts. The graphic is what spoke to me. I might sell them though. Hit me up if you are interested in buying!</p>
               <p>@joeypopp</p>
             </div>
-            <!-- Card 9 -->
+
             <div className="card">
               <img src="img/img10.jpeg" alt="abstract art"/>
               <p>#summer #green #shorts #cargo</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import {CardList} from './Functions.js'
+import { CardList } from './Functions.js'
 export function Home(props){
     
     return (
@@ -23,13 +23,10 @@ export function Home(props){
             <main>
                 <section id="Posts">
                     <div className="card-container">
-                        
 
-                            <div>
-                              <CardList />
-                            </div>
-
-
+                        <div className="card">
+                            <CardList />
+                        </div>
                         
                         <div className="card">
                             <img src="img/img2.jpeg" alt="abstract art"/>

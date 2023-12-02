@@ -11,7 +11,7 @@ export function searchForm (props) {
 
         <div className="nav">
         <nav>
-          <input type="checkbox" id="nav-toggle" className="nav-toggle">
+          <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
           <label for="nav-toggle" className="dropdown-btn">&#9776; Menu</label>
           <ul>
             <li><a href="login.html">Main Page</a></li>

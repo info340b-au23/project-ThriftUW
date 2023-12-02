@@ -4,19 +4,19 @@ export function LoginForm (props) {
   return (
 
     <main>
-    <script src='./components/Functions.js'></script>
-    
-      <form id="loginForm" method="post">
-        <div className="containerLogin">
-          <label><b>User ID</b></label>
-          <input type="text" placeholder="Enter User ID" name="userid" required />
+      <script src='./components/Functions.js'></script>
+      
+        <form id="loginForm" method="post">
+          <div className="containerLogin">
+            <label><b>User ID</b></label>
+            <input type="text" placeholder="Enter User ID" name="userid" required />
 
-          <label><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="password" required />
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required />
 
-          <button type="submit">Login</button>
-        </div>
-      </form>
+            <button type="submit">Login</button>
+          </div>
+        </form>
 
       
     </main>

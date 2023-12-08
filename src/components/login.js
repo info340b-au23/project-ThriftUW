@@ -1,22 +1,47 @@
 import React from 'react';
 
 export function LoginForm (props) {
+
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationErrors = {};
+
+    if (!formData.firstName.trim()) {
+        validationErrors.firstName = 'First name is required';
+    }
+    if (!formData.lastName.trim()) {
+        validationErrors.lastName = 'Last name is required';
+    }
+    if (!formData.email.trim()) {
+        validationErrors.email = 'Email is required';
+    }
+    if (!formData.message.trim()) {
+        validationErrors.message = 'Message is required';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
   return (
 
     <main>
-      <script src='./components/Functions.js'></script>
+
       
-        <form id="loginForm" method="post">
-          <div className="containerLogin">
-            <label><b>User ID</b></label>
-            <input type="text" placeholder="Enter User ID" name="userid" required />
 
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required />
-
-            <button type="submit">Login</button>
-          </div>
-        </form>
 
       
     </main>

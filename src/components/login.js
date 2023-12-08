@@ -1,7 +1,13 @@
 import React from 'react';
 
 export function LoginForm (props) {
-
+const handleInputChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+        ...formData,
+        [name]: value,
+    });
+};
 
 const handleSubmit = (e) => {
     e.preventDefault();

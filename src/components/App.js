@@ -11,8 +11,7 @@ function App(props) {
           <searchForm /> 
           <Post/>
           <Home/>
-          
-        {/* <DetailPage /> */}
+
         {/* <SearchPage /> */}
         {/* <AboutPage /> */}
       </div>

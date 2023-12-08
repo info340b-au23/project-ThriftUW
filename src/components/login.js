@@ -1,6 +1,20 @@
 import React from 'react';
 
-export function LoginForm (props) {
+function loginForm() {
+    const theme = useTheme();
+
+    const [formData, setFromData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        message: '',
+    });
+}
+
+const [errors, setErrors] = useState({});
+const [isAlertOpen, setAlertOpen] = useState(false);
+
 const handleInputChange = (e) => {
     const {name, value} = e.target;
     setFormData({
@@ -26,37 +40,59 @@ const handleSubmit = (e) => {
         validationErrors.message = 'Message is required';
     }
 
-if (Object.keys (validationErrors). length === 0) {
-    const db = getDatabase();
+    if (Object.keys (validationErrors). length === 0) {
+        const db = getDatabase();
     
-    const usersRef = ref(db,'users');
+        const usersRef = ref(db,'users');
     
-    firebasePush(usersRef, formData)
-        .then（（）=>｛
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-  return (
-
-    <main>
-
-      
-
-
-      
-    </main>
-  );
+        firebasePush(usersRef, formData)
+            .then(() => {
+                setAlertOpen(true);
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    phoneNumber: '',
+                    message: '',
+                });
+            })
+            .catch((error) => {
+                console.error("Error writing to Firebase Database", error);
+            });
+    } else {
+        setErrors(validationErrors);
+    }
 };
 
+return (
+    <form style={formStyles} onSubmit={handleSubmit}>
+        <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+                <TextField
+                    label="First Name"
+                    name="firstName"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    error={!!errors.firstName}
+                    helperText={errors.firstName}
+                />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+                <TextField
+                    label="First Name"
+                    name="firstName"
+                    variant="outlined"
+                    fullWidth
+                    required
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    error={!!errors.firstName}
+                    helperText={errors.firstName}
+                />
+            </Grid>
+        </Grid>
+    </form>
+)

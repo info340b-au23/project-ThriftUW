@@ -7,7 +7,6 @@ function loginForm() {
         firstName: '',
         lastName: '',
         email: '',
-        phoneNumber: '',
         message: '',
     });
 }
@@ -52,7 +51,6 @@ const handleSubmit = (e) => {
                     firstName: '',
                     lastName: '',
                     email: '',
-                    phoneNumber: '',
                     message: '',
                 });
             })

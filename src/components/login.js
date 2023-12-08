@@ -20,7 +20,13 @@ const handleSubmit = (e) => {
         validationErrors.message = 'Message is required';
     }
 
-
+if (Object.keys (validationErrors). length === 0) {
+    const db = getDatabase();
+    
+    const usersRef = ref(db,'users');
+    
+    firebasePush(usersRef, formData)
+        .then（（）=>｛
 
 
 

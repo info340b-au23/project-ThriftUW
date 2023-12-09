@@ -40,7 +40,9 @@ export function Post (props) {
         </header>
   
         <main>
-
+            <div>
+                {CreatePost}
+            </div>
 
         </main>
   
@@ -165,7 +167,7 @@ function CreatePost (props){
         <div className="container posts">
             <div className="card border-light mb-3 mt-5 post">
             <div className="card-body">
-                <img src={img} className="card-img-top" alt={alt}/>
+                <img src={imgURL} className="card-img-top" alt={alt}/>
 
                 <div className="card-body-text">
                     <div className="card-title"> <small className="text-muted">{user}</small></div>

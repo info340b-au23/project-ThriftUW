@@ -20,60 +20,59 @@
             }
         },
         "post2": {
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "../img/img7.jpeg",
+            "userName": "Ncumic",
+            "cardText": "Cool pants, super pants cool like super cool",
+            "alt": "A picture of cool pants",
+            "date": "November 28th",
+            "numLike": 1,
             "comments": {
                 "comment1": {
-                    "userid": "anitatan2003",
-                    "comment": "omg so cute."
+                    "userid": "Ncumic2002",
+                    "comment": "Absolutely slaying!"
                 },
                 "comment2": {
-                    "userid": "anitatan2003",
-                    "comment": "i love this!!!!"
+                    "userid": "Ncumic2002",
+                    "comment": "There is a god in our presence"
                 }
 
             }
             
         },
         "post3": {
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "../img/img6.jpeg",
+            "userName": "nsuneel",
+            "cardText": "Cute floral midi skirts ",
+            "alt": "A picture of two teenage girls in summer floral midi skirts",
+            "date": "May 31st",
+            "numLike": 15,
             "comments": {
                 "comment1": {
-                    "userid": "anitatan2003",
-                    "comment": "omg so cute."
+                    "userid": "nikki.suneel",
+                    "comment": "This is so adorable!"
                 },
                 "comment2": {
-                    "userid": "anitatan2003",
-                    "comment": "i love this!!!!"
+                    "userid": "nikki.suneel",
+                    "comment": "You have to tell me where to get these skirts <3"
                 }
 
             }
-
         },
         "post4": {
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "../img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
             "comments": {
                 "comment1": {
-                    "userid": "anitatan2003",
-                    "comment": "omg so cute."
+                    "userid": "etzwang2002",
+                    "comment": "yass."
                 },
                 "comment2": {
-                    "userid": "anitatan2003",
-                    "comment": "i love this!!!!"
+                    "userid": "etzwang2002",
+                    "comment": "swag"
                 }
 
             }

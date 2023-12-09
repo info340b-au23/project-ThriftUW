@@ -31,9 +31,9 @@ export function Post (props) {
               &#9776; Menu
             </label>
             <ul>
-              <li><a href="login.html">Main Page</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li><a href="posts.html">Post Fits</a></li>
+              <li><a href="login.js">Main Page</a></li>
+              <li><a href="search.js">Search</a></li>
+              <li><a href="posts.js">Post Fits</a></li>
             </ul>
           </nav>
         </header>

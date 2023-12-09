@@ -20,20 +20,20 @@
             }
         },
         "post2": {
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "../img/img7.jpeg",
+            "userName": "Ncumic",
+            "cardText": "Cool pants, super pants cool like super cool",
+            "alt": "A picture of cool pants",
+            "date": "November 28th",
+            "numLike": 1,
             "comments": {
                 "comment1": {
-                    "userid": "anitatan2003",
-                    "comment": "omg so cute."
+                    "userid": "Ncumic2002",
+                    "comment": "Absolutely slaying!"
                 },
                 "comment2": {
-                    "userid": "anitatan2003",
-                    "comment": "i love this!!!!"
+                    "userid": "Ncumic2002",
+                    "comment": "There is a god in our presence"
                 }
 
             }

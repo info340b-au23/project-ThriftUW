@@ -60,20 +60,20 @@
 
         },
         "post4": {
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "../img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
             "comments": {
                 "comment1": {
-                    "userid": "anitatan2003",
-                    "comment": "omg so cute."
+                    "userid": "etzwang2002",
+                    "comment": "yass."
                 },
                 "comment2": {
-                    "userid": "anitatan2003",
-                    "comment": "i love this!!!!"
+                    "userid": "etzwang2002",
+                    "comment": "swag"
                 }
 
             }

@@ -40,24 +40,23 @@
             
         },
         "post3": {
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "../img/img6.jpeg",
+            "userName": "nsuneel",
+            "cardText": "Cute floral midi skirts ",
+            "alt": "A picture of two teenage girls in summer floral midi skirts",
+            "date": "May 31st",
+            "numLike": 15,
             "comments": {
                 "comment1": {
-                    "userid": "anitatan2003",
-                    "comment": "omg so cute."
+                    "userid": "nikki.suneel",
+                    "comment": "This is so adorable!"
                 },
                 "comment2": {
-                    "userid": "anitatan2003",
-                    "comment": "i love this!!!!"
+                    "userid": "nikki.suneel",
+                    "comment": "You have to tell me where to get these skirts <3"
                 }
 
             }
-
         },
         "post4": {
             "imgURL": "../img8.jpeg",

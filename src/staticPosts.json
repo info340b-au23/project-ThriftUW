@@ -1,12 +1,12 @@
 {
     "posts":{
         "post1":{
-            "imgURL": "",
-            "userName": "",
-            "cardText": "",
-            "alt": "",
-            "date": "",
-            "isLiked": "",
+            "imgURL": "img/outfit1.jpeg",
+            "userName": "antan",
+            "cardText": "Neutrals",
+            "alt": "A person posing in a neutral colored outfit.",
+            "date": "December 9th",
+            "numLiked": "4",
             "comments": {
                 "comment1": {
                     "userid": "anitatan2003",

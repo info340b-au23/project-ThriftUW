@@ -1,0 +1,26 @@
+{
+    "posts":{
+        "post1":{
+            "imgURL": "",
+            "userName": "",
+            "cardText": "",
+            "alt": "",
+            "date": "",
+            "isLiked": "",
+            "comments": {
+                "comment1": {
+                    "userid": "anitatan2003",
+                    "comment": "omg so cute."
+                },
+                "comment2": {
+                    "userid": "anitatan2003",
+                    "comment": "i love this!!!!"
+                }
+
+            }
+        },
+        "post2": {
+            
+        }
+    }
+}

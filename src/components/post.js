@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { loginForm } from 'CreatePost.js'
 
 
 export function Post (props) {

@@ -79,10 +79,10 @@
 
         },
         "post5": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img2.jpeg",
+            "userName": "scoobyfruitsnacks",
+            "cardText": "These linen pants are so breathable and flowy",
+            "alt": "a pair of linen pants",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -99,10 +99,10 @@
 
         },
         "post6": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img3.jpeg",
+            "userName": "oreocakeyum",
+            "cardText": "These pants are so funky and bright, I thrifted them, aren't they cool!",
+            "alt": "a pair of funky and bright pants",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -119,10 +119,10 @@
 
         },
         "post7": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img4.jpeg",
+            "userName": "granolabar346",
+            "cardText": "Jean skirts are so in recenty I want to get one for myself!",
+            "alt": "a pair of jean skirts",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -139,10 +139,10 @@
 
         },
         "post8": {
-            "imgURL": "../img/img8.jpeg",
+            "imgURL": "../img/img6.jpeg",
             "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "cardText": "Flowy floral skirts have been all over my fashion pages! I thrifted this at the fremont market!",
+            "alt": "a flowy floral skirt",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -158,20 +158,20 @@
             }
 
         },
-        "post9": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
-            "date": "December 9th",
-            "isLiked": 88,
+            "post9": {
+            "imgURL": "../img/img7.jpeg",
+            "userName": "connormason",
+            "cardText": "This are me in my new linen pants, my girlfriend bought them for me. Have been living in them! Bought them on sale for $25.00. Mens Linen Pants #summer #linen #pants #brown #H&M",
+            "alt": "Man wearing beige colored linen pants",
+            "date": "October 14th",
+            "isLiked": false,
             "comments": {
                 "comment1": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "yass."
                 },
                 "comment2": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "swag"
                 }
 
@@ -180,18 +180,18 @@
         },
         "post10": {
             "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "userName": "ryanpenz12",
+            "cardText": "Found these awesome thrifted barely used zara mens jean shorts. Love the color. #summer #jean #shorts #zara #thrifted",
+            "alt": "Man wearing brown shorts",
             "date": "December 9th",
-            "isLiked": 88,
+            "isLiked": false,
             "comments": {
                 "comment1": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "yass."
                 },
                 "comment2": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "swag"
                 }
 
@@ -199,19 +199,19 @@
 
         },
         "post11": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img9.jpeg",
+            "userName": "aidangraceee",
+            "cardText": "Kinda interesting shorts. The graphic is what spoke to me. I might sell them though. Hit me up if you are interested in buying! #summer #shorts #graphics #brown",
+            "alt": "Brown Graphic Shorts",
             "date": "December 9th",
-            "isLiked": 88,
+            "isLiked": false,
             "comments": {
                 "comment1": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "yass."
                 },
                 "comment2": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "swag"
                 }
 
@@ -219,19 +219,19 @@
 
         },
         "post12": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
-            "date": "December 9th",
-            "isLiked": 88,
+            "imgURL": "../img/img10.jpeg",
+            "userName": "joeypopp",
+            "cardText": "This green is a dope color. I found it at the vintage market near capitol hill. DM me up for the name. Mens Green Shorts #summer #green #shorts #cargo",
+            "alt": "Man wearing green cargo shorts",
+            "date": "November 29th",
+            "isLiked": false,
             "comments": {
                 "comment1": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "yass."
                 },
                 "comment2": {
-                    "userid": "etzwang2002",
+                    "userid": "etzwang",
                     "comment": "swag"
                 }
 
@@ -241,61 +241,3 @@
     }
 }
 
-<div className="card">
-                            <img src="img/img2.jpeg" alt="abstract art"/>
-                            <p>#summer #bottoms #linen #thrifted</p>
-                            <p>These linen pants are so breathable and flowy</p>
-                            <p>@jamielethly</p>
-                        </div>
-
-                        
-                        <div className="card">
-                            <img src="img/img3.jpeg" alt="abstract art"/>
-                            <p>#summer #orange #bottoms #pants #funky</p>
-                            <p>These pants are so funky and bright, I thrifted them, aren't they cool!</p>
-                            <p>@skielemyeres</p>
-                        </div>
-
-                        
-                        <div className="card">
-                            <img src="img/img4.jpeg" alt="abstract art"/>
-                            <p>#summer #skirt #bottoms #jean #short</p>
-                            <p>Jean skirts are so in recenty I want to get one for myself!</p>
-                            <p>@maggielowe</p>
-                        </div>
-
-                        
-                        <div className="card">
-                            <img src="img/img6.jpeg" alt="abstract art"/>
-                            <p>#summer #europe #midi #skirt #floral</p>
-                            <p>Flowy floral skirts have been all over my fashion pages! I thrifted this at the fremont market!</p>
-                            <p>@maevecostello</p>
-                        </div>
-                        
-                        <div className="card">
-                            <img src="img/img7.jpeg" alt="abstract art"/>
-                            <p>#summer #linen #pants #brown #H&M</p>
-                            <p>This are me in my new linen pants, my girlfriend bought them for me. Have been living in them Bought them on sale for $25.00</p>
-                            <p>@connormason</p>
-                        </div>
-                        
-                        <div className="card">
-                            <img src="img/img8.jpeg" alt="abstract art"/>
-                            <p>#summer #jean #shorts #zara #thrifted</p>
-                            <p>Found these awesome thrifted barely used zara mens jean shorts. Love the color.</p>
-                            <p>@aidangraceee</p>
-                        </div>
-                        
-                        <div className="card">
-                            <img src="img/img9.jpeg" alt="abstract art"/>
-                            <p>#summer #shorts #graphics #brown</p>
-                            <p>Kinda interesting shorts. The graphic is what spoke to me. I might sell them though. Hit me up if you are interested in buying!</p>
-                            <p>@joeypopp</p>
-                        </div>
-                        
-                        <div className="card">
-                            <img src="img/img10.jpeg" alt="abstract art"/>
-                            <p>#summer #green #shorts #cargo</p>
-                            <p>This green is a dope color. I found it at the vintage market near capitol hill. DM me up for the name.</p>
-                            <p>@ryanpenz12</p>
-                        </div>

@@ -6,7 +6,7 @@
             "cardText": "Neutrals",
             "alt": "A person posing in a neutral colored outfit.",
             "date": "December 9th",
-            "numLiked": 4,
+            "isLike": false,
             "comments": {
                 "comment1": {
                     "userid": "anitatan2003",
@@ -25,7 +25,7 @@
             "cardText": "Cool pants, super pants cool like super cool",
             "alt": "A picture of cool pants",
             "date": "November 28th",
-            "numLike": 1,
+            "isLike": false,
             "comments": {
                 "comment1": {
                     "userid": "Ncumic2002",
@@ -45,7 +45,7 @@
             "cardText": "Cute floral midi skirts ",
             "alt": "A picture of two teenage girls in summer floral midi skirts",
             "date": "May 31st",
-            "numLike": 15,
+            "isLike": false,
             "comments": {
                 "comment1": {
                     "userid": "nikki.suneel",
@@ -64,7 +64,7 @@
             "cardText": "me and my shorts",
             "alt": "a pair of cool shorts",
             "date": "December 9th",
-            "isLiked": 88,
+            "isLiked": false,
             "comments": {
                 "comment1": {
                     "userid": "etzwang2002",

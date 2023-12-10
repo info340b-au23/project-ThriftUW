@@ -6,6 +6,32 @@ import {searchForm} from './search.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App(props) {
+
+  // Sign in User
+  const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0])
+  const navigateTo = useNavigate();
+
+  useEffect(() => {
+    const auth = getAuth();
+
+    onAuthStateChanged(auth, (firebaseUser) => {
+      if (firebaseUser) {
+        firebaseUser.userId = firebaseUser.uid;
+        firebaseUser.userName = firebaseUser.displayName;
+        firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
+        setCurrentUser(firebaseUser);
+      }
+      else {
+        setCurrentUser(DEFAULT_USERS[0]);
+      }
+    })
+
+  }, [])
+
+  const loginUser = (userObj) => {
+    setCurrentUser(userObj);
+  }
+
   return (
     <Router>
         <div>

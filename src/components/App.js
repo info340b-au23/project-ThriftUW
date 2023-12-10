@@ -1,34 +1,26 @@
-import react from 'react';
-import {SignInPage} from './Login.js';
-import {Post} from './post.js';
-import {Home} from './main.js';
-import {searchForm} from './search.js';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import { Routes, Route, Outlet, Navigate, useNavigate} from 'react-router-dom';
 
-function App(props) {
+import SignInPage from './Login';
+import { Home }from './main';
+import Navbar from './Navbar';
+import { Post } from './post';
+import searchForm from './search';
+
+import DEFAULT_USERS from '../data/firebase.json';
+
+export default function App(props) {
 
   // Sign in User
   const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0])
   const navigateTo = useNavigate();
 
   useEffect(() => {
-    const auth = getAuth();
-
-    onAuthStateChanged(auth, (firebaseUser) => {
-      if (firebaseUser) {
-        firebaseUser.userId = firebaseUser.uid;
-        firebaseUser.userName = firebaseUser.displayName;
-        firebaseUser.userImg = firebaseUser.photoURL || "/img/null.png";
-        setCurrentUser(firebaseUser);
-      }
-      else {
-        setCurrentUser(DEFAULT_USERS[0]);
-      }
-    })
-
+    loginUser(DEFAULT_USERS[1])
   }, [])
 
   const loginUser = (userObj) => {
+    console.log("logging in as", userObj.userName);
     setCurrentUser(userObj);
   }
 
@@ -48,5 +40,3 @@ function App(props) {
     </Router>
   );
 }
-
-export default App;

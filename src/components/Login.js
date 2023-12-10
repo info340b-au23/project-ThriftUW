@@ -2,7 +2,7 @@ import React from 'react';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 
-import DEFAULT_USERS from '../data/users.json';
+import DEFAULT_USERS from '../data/firebase.json';
 
 export default function SignInPage(props) {
     const currentUser = props.currentUser;

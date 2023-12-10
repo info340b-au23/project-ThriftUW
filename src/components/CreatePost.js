@@ -5,10 +5,12 @@ function loginForm() {
     const theme = useTheme();
 
     const [formData, setFromData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: '',
+        imgURL: '',
+        userName: '',
+        cardText: '',
+        alt: '',
+        date: ''
+
     });
 }
 

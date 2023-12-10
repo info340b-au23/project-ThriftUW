@@ -1,24 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = () => {
-    return (
-          <div>
-            <h1>Out-Of-Fits</h1>
-            <h2>Your UW Campus Thrift Community & Marketplace</h2>
-          </div>
-          <nav>
+function Navbar() {
+  return (
+    <>
 
-            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
-            <label htmlFor="nav-toggle" className="dropdown-btn">
-              &#9776; Menu
-            </label>
-            <ul>
-                <li><Link to="/loggedIn.js">Main</Link></li>
-                <li><Link to="/search.js">Search</Link></li>
-                <li><Link to="/post.js">Posts</Link></li>
-            </ul>
-         </nav>
-    );
+    <div>
+        <h1>Out-Of-Fits</h1>
+        <h2>Your UW Campus Thrift Community & Marketplace</h2>
+    </div>
+
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="/loggedIn.js">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/loggedIn.js">Main</Nav.Link>
+            <Nav.Link href="/search.js">Search</Nav.Link>
+            <Nav.Link href="/post.js">Post</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 export default Navbar;

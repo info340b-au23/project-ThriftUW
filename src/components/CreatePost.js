@@ -10,7 +10,7 @@ function loginForm() {
         email: '',
         message: '',
     });
-
+}
 
 const [errors, setErrors] = useState({});
 const [isAlertOpen, setAlertOpen] = useState(false);
@@ -95,4 +95,3 @@ return (
         </Grid>
     </form>
 )
-}

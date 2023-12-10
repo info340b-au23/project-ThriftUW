@@ -28,17 +28,21 @@ const handleSubmit = (e) => {
     const validationErrors = {};
 
     if (!formData.firstName.trim()) {
-        validationErrors.firstName = 'First name is required';
+        validationErrors.firstName = 'imgURL';
     }
     if (!formData.lastName.trim()) {
-        validationErrors.lastName = 'Last name is required';
+        validationErrors.lastName = 'userName';
     }
     if (!formData.email.trim()) {
-        validationErrors.email = 'Email is required';
+        validationErrors.email = 'cardText';
     }
     if (!formData.message.trim()) {
-        validationErrors.message = 'Message is required';
+        validationErrors.message = 'alt';
     }
+    if (!formData.message.trim()) {
+        validationErrors.message = 'date';
+    }
+
 
     if (Object.keys (validationErrors). length === 0) {
         const db = getDatabase();

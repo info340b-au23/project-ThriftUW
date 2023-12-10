@@ -30,19 +30,19 @@ const handleSubmit = (e) => {
     const validationErrors = {};
 
     if (!formData.firstName.trim()) {
-        validationErrors.firstName = 'imgURL';
+        validationErrors.firstName = 'imgURL is required';
     }
     if (!formData.lastName.trim()) {
-        validationErrors.lastName = 'userName';
+        validationErrors.lastName = 'userName is required';
     }
     if (!formData.email.trim()) {
-        validationErrors.email = 'cardText';
+        validationErrors.email = 'cardText is required';
     }
     if (!formData.message.trim()) {
-        validationErrors.message = 'alt';
+        validationErrors.message = 'alt is required';
     }
     if (!formData.message.trim()) {
-        validationErrors.message = 'date';
+        validationErrors.message = 'date is required';
     }
 
 

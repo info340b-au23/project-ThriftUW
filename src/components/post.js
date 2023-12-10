@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import { loginForm } from 'CreatePost.js'
-import staticPostInfo from 'staticPosts.json'
-=======
 import React, { useEffect, useState } from 'react';
 import { loginForm } from './CreatePost.js'
 
->>>>>>> a14e32c41022135806477a556e0719bd3e7fe763
 
 export function Post (props) {
     const handleSubmit = () => {
@@ -47,9 +41,11 @@ export function Post (props) {
   
         <main>
             <div>
+                {CreateStaticPost}
+            </div>
+            <div>
                 {CreatePost}
             </div>
-
         </main>
   
         <footer>

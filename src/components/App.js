@@ -25,18 +25,16 @@ export default function App(props) {
   }
 
   return (
-    <Router>
         <div>
              <Navbar />
              <main>
                 <Routes>
-                  <Route path="/Login.js" element={<LoginForm/>} />
+                  <Route path="/Login.js" element={<SignInPage/>} />
                   <Route path="/loggedIn.js" element={<Home />} />
                   <Route path="/search.js" element={<searchForm />} />
                   <Route path="/post.js" element={<Post />} />
                 </Routes>
              </main>
         </div>
-    </Router>
   );
 }

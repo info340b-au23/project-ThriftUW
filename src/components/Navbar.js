@@ -8,6 +8,7 @@ const Navbar = () => {
             <h2>Your UW Campus Thrift Community & Marketplace</h2>
           </div>
           <nav>
+
             <input type="checkbox" id="nav-toggle" className="nav-toggle" />
             <label htmlFor="nav-toggle" className="dropdown-btn">
               &#9776; Menu

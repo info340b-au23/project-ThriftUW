@@ -1,7 +1,7 @@
 import react from 'react';
-import {LoginForm} from './Login.js';
+import {SignInPage} from './Login.js';
 import {Post} from './post.js';
-import {Home} from './loggedIn.js';
+import {Home} from './main.js';
 import {searchForm} from './search.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

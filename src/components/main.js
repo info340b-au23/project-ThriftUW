@@ -1,6 +1,5 @@
 import React from "react";
-import { CardList } from './Functions.js'
-import {CreateStaticPost} from './posts.js'
+import {CreateStaticPost} from './post.js'
 
 export function Home(props){
     

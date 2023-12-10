@@ -8,7 +8,7 @@ export default function SignInPage(props) {
     const currentUser = props.currentUser;
     const loginFunction = props.loginCallback;
 
-    const handleClick = (event) {
+    const handleClick = (event) => {
         const whichUser = event.currentTarget.name
         console.log(whichUser);
         const selectedUserObj = DEFAULT_USERS.filter((userObj) => userObj.userId === whichUser)[0] || DEFAULT_USERS[0]
@@ -24,7 +24,7 @@ export default function SignInPage(props) {
             <Dropdown.Item className="user-icon" key={userObj.userName}
                 name={userObj.userId} onClick={handleClick}
             >
-                <img src={userObj.userImg} alt={userObj.userName} + " avatar" />
+                <img src={userObj.userImg} alt={userObj.userName + " avatar"} />
                 {userObj.userName}
             </Dropdown.Item>
         )

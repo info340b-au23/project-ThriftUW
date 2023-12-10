@@ -3,9 +3,11 @@ import { loginForm } from './CreatePost.js'
 
 
 export function Post (props) {
+    const [likes, setLikes] = useState(0);
+    const [clicked, setClicked] = useState(false);
+    
+    //get post, map existing comments and add new comment
     const handleSubmit = () => {
-        const [likes, setLikes] = useState(0);
-        const [clicked, setClicked] = useState(false);
 
         const handleClick = () => {
             setClicked(true);
@@ -18,6 +20,7 @@ export function Post (props) {
             setClicked(false);
         }
     }
+
 
     return (
         <div>
@@ -162,7 +165,7 @@ function AddPost () {
     )
 }
 
-function CreateStaticPost (props){
+export function CreateStaticPost (props){
     const {user, cardText, img, alt, date} = props;
 
     return(

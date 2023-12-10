@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect,useState } from 'react';
 import { loginForm } from './CreatePost.js'
 
 
@@ -41,9 +41,11 @@ export function Post (props) {
   
         <main>
             <div>
+                {CreateStaticPost}
+            </div>
+            <div>
                 {CreatePost}
             </div>
-
         </main>
   
         <footer>

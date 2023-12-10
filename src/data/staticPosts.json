@@ -77,6 +77,166 @@
 
             }
 
+        },
+        "post5": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post6": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post7": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post8": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post9": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post10": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post11": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
+        },
+        "post12": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": 88,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
+
+            }
+
         }
     }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {CreateStaticPost} from './post.js'
+import { Post } from './post.js'
 
 export function Home(props){
     
@@ -26,7 +26,7 @@ export function Home(props){
                     <div className="card-container">
 
                         <div className="card">
-                            <CardList />
+                            <Post />
                         </div>
                         
                     </div>

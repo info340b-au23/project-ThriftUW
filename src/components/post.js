@@ -47,7 +47,7 @@ export function Post (props) {
                 {CreateStaticPost}
             </div>
             <div>
-                {CreatePost}
+                {AddPost}
             </div>
         </main>
   
@@ -166,7 +166,7 @@ function AddPost () {
 }
 
 export function CreateStaticPost (props){
-    const {user, cardText, img, alt, date} = props;
+    const {user, cardText, imgURL, alt, date} = props;
 
     return(
         <div className="container posts">

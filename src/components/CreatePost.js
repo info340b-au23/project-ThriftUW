@@ -4,10 +4,12 @@ import { TextField, Grid } from '@material-ui/core';
 
 function loginForm() {
     const [formData, setFromData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: '',
+        imgURL: '',
+        userName: '',
+        cardText: '',
+        alt: '',
+        date: ''
+
     });
 
     const [errors, setErrors] = useState({});
@@ -25,42 +27,41 @@ function loginForm() {
         e.preventDefault();
         const validationErrors = {};
 
-        if (!formData.firstName.trim()) {
-            validationErrors.firstName = 'First name is required';
-        }
-        if (!formData.lastName.trim()) {
-            validationErrors.lastName = 'Last name is required';
-        }
-        if (!formData.email.trim()) {
-            validationErrors.email = 'Email is required';
-        }
-        if (!formData.message.trim()) {
-            validationErrors.message = 'Message is required';
-        }
+    if (!formData.firstName.trim()) {
+        validationErrors.firstName = 'First name is required';
+    }
+    if (!formData.lastName.trim()) {
+        validationErrors.lastName = 'Last name is required';
+    }
+    if (!formData.email.trim()) {
+        validationErrors.email = 'Email is required';
+    }
+    if (!formData.message.trim()) {
+        validationErrors.message = 'Message is required';
+    }
 
         if (Object.keys (validationErrors). length === 0) {
             const db = getDatabase();
     
             const usersRef = ref(db,'users');
     
-            firebasePush(usersRef, formData)
-                .then(() => {
-                    setAlertOpen(true);
-                    setFormData({
-                        firstName: '',
-                        lastName: '',
-                        email: '',
-                        message: '',
-                    });
-                })
-                .catch((error) => {
-                    console.error("Error writing to Firebase Database", error);
+        firebasePush(usersRef, formData)
+            .then(() => {
+                setAlertOpen(true);
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    message: '',
                 });
-            console.log('Form data:', formData);
-        } else {
-            setErrors(validationErrors);
-        }
-    };
+            })
+            .catch((error) => {
+                console.error("Error writing to Firebase Database", error);
+            });
+    } else {
+        setErrors(validationErrors);
+    }
+};
 
     return (
         <form style={formStyles} onSubmit={handleSubmit}>

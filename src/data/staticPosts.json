@@ -79,10 +79,10 @@
 
         },
         "post5": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img2.jpeg",
+            "userName": "scoobyfruitsnacks",
+            "cardText": "These linen pants are so breathable and flowy",
+            "alt": "a pair of linen pants",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -99,10 +99,10 @@
 
         },
         "post6": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img3.jpeg",
+            "userName": "oreocakeyum",
+            "cardText": "These pants are so funky and bright, I thrifted them, aren't they cool!",
+            "alt": "a pair of funky and bright pants",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -119,10 +119,10 @@
 
         },
         "post7": {
-            "imgURL": "../img/img8.jpeg",
-            "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "imgURL": "../img/img4.jpeg",
+            "userName": "granolabar346",
+            "cardText": "Jean skirts are so in recenty I want to get one for myself!",
+            "alt": "a pair of jean skirts",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {
@@ -139,10 +139,10 @@
 
         },
         "post8": {
-            "imgURL": "../img/img8.jpeg",
+            "imgURL": "../img/img6.jpeg",
             "userName": "etzwang",
-            "cardText": "me and my shorts",
-            "alt": "a pair of cool shorts",
+            "cardText": "Flowy floral skirts have been all over my fashion pages! I thrifted this at the fremont market!",
+            "alt": "a flowy floral skirt",
             "date": "December 9th",
             "isLiked": 88,
             "comments": {

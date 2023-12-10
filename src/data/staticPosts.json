@@ -1,35 +1,87 @@
-import React from "react";
-import { CardList } from './Functions.js'
-export function Home(props){
-    
-    return (
-        <body>
-            <header>
-                <div className="head">
-                    <h1>Out-Of-Fits</h1>
-                    <h2>Your UW Campus Thrift Community & Marketplace</h2>
-                </div>
-                <nav>
+{
+    "posts":{
+        "post1":{
+            "imgURL": "../img/outfit1.jpeg",
+            "userName": "antan",
+            "cardText": "Neutrals",
+            "alt": "A person posing in a neutral colored outfit.",
+            "date": "December 9th",
+            "isLiked": false,
+            "comments": {
+                "comment1": {
+                    "userid": "anitatan2003",
+                    "comment": "omg so cute."
+                },
+                "comment2": {
+                    "userid": "anitatan2003",
+                    "comment": "i love this!!!!"
+                }
 
-                    <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
-                    <label for="nav-toggle" className="dropdown-btn">&#9776; Menu</label>
-                    <ul>
-                        <li><a href="login.html">Main Page</a></li>
-                        <li><a href="search.html">Search</a></li>
-                        <li><a href="posts.html">Post Fits</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section id="Posts">
-                    <div className="card-container">
+            }
+        },
+        "post2": {
+            "imgURL": "../img/img7.jpeg",
+            "userName": "Ncumic",
+            "cardText": "Cool pants, super pants cool like super cool",
+            "alt": "A picture of cool pants",
+            "date": "November 28th",
+            "isLiked": false,
+            "comments": {
+                "comment1": {
+                    "userid": "Ncumic2002",
+                    "comment": "Absolutely slaying!"
+                },
+                "comment2": {
+                    "userid": "Ncumic2002",
+                    "comment": "There is a god in our presence"
+                }
 
-                        <div className="card">
-                            <CardList />
-                        </div>
+            }
+            
+        },
+        "post3": {
+            "imgURL": "../img/img6.jpeg",
+            "userName": "nsuneel",
+            "cardText": "Cute floral midi skirts ",
+            "alt": "A picture of two teenage girls in summer floral midi skirts",
+            "date": "May 31st",
+            "isLiked": false,
+            "comments": {
+                "comment1": {
+                    "userid": "nikki.suneel",
+                    "comment": "This is so adorable!"
+                },
+                "comment2": {
+                    "userid": "nikki.suneel",
+                    "comment": "You have to tell me where to get these skirts <3"
+                }
 
+            }
+        },
+        "post4": {
+            "imgURL": "../img/img8.jpeg",
+            "userName": "etzwang",
+            "cardText": "me and my shorts",
+            "alt": "a pair of cool shorts",
+            "date": "December 9th",
+            "isLiked": false,
+            "comments": {
+                "comment1": {
+                    "userid": "etzwang2002",
+                    "comment": "yass."
+                },
+                "comment2": {
+                    "userid": "etzwang2002",
+                    "comment": "swag"
+                }
 
-                        <div className="card">
+            }
+
+        }
+    }
+}
+
+<div className="card">
                             <img src="img/img2.jpeg" alt="abstract art"/>
                             <p>#summer #bottoms #linen #thrifted</p>
                             <p>These linen pants are so breathable and flowy</p>
@@ -87,15 +139,3 @@ export function Home(props){
                             <p>This green is a dope color. I found it at the vintage market near capitol hill. DM me up for the name.</p>
                             <p>@ryanpenz12</p>
                         </div>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <div className="container">
-                    <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
-                </div>
-            </footer>
-          </body>
-    );
-}
-

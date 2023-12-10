@@ -1,5 +1,5 @@
 import react from 'react';
-import {LoginForm} from './login.js';
+import {LoginForm} from './Login.js';
 import {Post} from './post.js';
 import {Home} from './loggedIn';
 import {searchForm} from './search.js'

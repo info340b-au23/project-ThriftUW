@@ -11,7 +11,7 @@ function loginForm() {
         alt: '',
         date: ''
     });
-
+}
 
 const [errors, setErrors] = useState({});
 const [isAlertOpen, setAlertOpen] = useState(false);
@@ -96,4 +96,3 @@ return (
         </Grid>
     </form>
 )
-}

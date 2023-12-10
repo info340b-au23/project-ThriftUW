@@ -10,6 +10,7 @@ function loginForm() {
         cardText: '',
         alt: '',
         date: ''
+
     });
 }
 

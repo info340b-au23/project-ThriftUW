@@ -55,10 +55,11 @@ const handleSubmit = (e) => {
             .then(() => {
                 setAlertOpen(true);
                 setFormData({
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    message: '',
+                    imgURL: '',
+                    userName: '',
+                    cardText: '',
+                    alt: '',
+                    date: ''            
                 });
             })
             .catch((error) => {

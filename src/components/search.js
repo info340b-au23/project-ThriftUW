@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function searchForm (props) {
+export function SearchForm (props) {
   return (
     <body>
       <header>
@@ -192,4 +192,4 @@ export function searchForm (props) {
   );
 };
 
-export default searchForm;
+//export default searchForm;

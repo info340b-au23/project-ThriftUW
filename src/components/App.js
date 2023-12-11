@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate} from 'react-router-dom';
 
-import SignInPage from './Login';
-import { Home }from './main';
-import Navbar from './Navbar';
-import { Post } from './post';
+import {SignInPage} from './Login.js';
+import { Home }from './Main.js';
+import {Navbar} from './Navbar.js';
+import { Post } from './Post.js';
+import { SearchForm } from './Search.js';
 
 import DEFAULT_USERS from '../data/firebase.json';
 
@@ -26,16 +27,20 @@ export default function App(props) {
     }
   }
 
+  /* 
+                <Routes>
+                  <Route path="/login" element={<SignInPage/>} />
+                  <Route path="/main" element={<Home />} />
+                  <Route path="/search" element={<SearchForm />} />
+                  <Route path="/post" element={<Post />} />
+                </Routes>
+  */
+
   return (
         <div>
              <Navbar />
              <main>
-                <Routes>
-                  <Route path="/Login.js" element={<SignInPage/>} />
-                  <Route path="/loggedIn.js" element={<Home />} />
-                  <Route path="/search.js" element={<searchForm />} />
-                  <Route path="/post.js" element={<Post />} />
-                </Routes>
+  
              </main>
         </div>
   );

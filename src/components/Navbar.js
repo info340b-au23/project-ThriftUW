@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 
-function Navbar() {
+export function Navbar() {
   return (
     <>
 
@@ -24,4 +24,4 @@ function Navbar() {
     </>
   );
 }
-export default Navbar;
+//export default Navbar;

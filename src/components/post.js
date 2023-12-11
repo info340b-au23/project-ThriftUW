@@ -1,5 +1,5 @@
-import React, { useEffect,useState } from 'react';
-import { loginForm } from './CreatePost.js'
+import React, { useState } from 'react';
+import { LoginForm } from './CreatePost.js'
 
 
 export function Post (props) {

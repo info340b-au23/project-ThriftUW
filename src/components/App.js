@@ -1,18 +1,17 @@
-import React, {useState, useEffect} from 'react';
-import { Routes, Route, Outlet, Navigate, useNavigate} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, useNavigate} from 'react-router-dom';
 
 import SignInPage from './Login';
 import { Home }from './main';
 import Navbar from './Navbar';
 import { Post } from './post';
-import searchForm from './search';
 
 import DEFAULT_USERS from '../data/firebase.json';
 
 export default function App(props) {
 
   // Sign in User
-  const [currentUser, setCurrentUser] = useState(DEFAULT_USERS[0])
+  const [setCurrentUser] = useState(DEFAULT_USERS[0])
   const navigateTo = useNavigate();
 
   useEffect(() => {
@@ -22,6 +21,9 @@ export default function App(props) {
   const loginUser = (userObj) => {
     console.log("logging in as", userObj.userName);
     setCurrentUser(userObj);
+    if(userObj.userId !== null) {
+      navigateTo('/chat/general');
+    }
   }
 
   return (

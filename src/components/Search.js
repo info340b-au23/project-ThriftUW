@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar} from './Navbar.js';
+import {CreateStaticPost} from './CreatePost.js';
 
 export function SearchForm (props) {
   return (

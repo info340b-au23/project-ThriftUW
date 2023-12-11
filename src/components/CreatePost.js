@@ -1,25 +1,19 @@
 import React, { useState } from 'react';
-import { ref, getDatabase, push as firebasePush } from 'firebase/database'
 
 function CreatePostForm() {
-    const formStyles = {
-        padding: '2rem'
-    }
 
     const [formData, setFormData] = useState({
         imgURL: '',
         userName: '',
         cardText: '',
         alt: '',
-        date: ''
+        date: '',
+        season: ''
 
     });
 
-    const [errors, setErrors] = useState({});
-    const [isAlertOpen, setAlertOpen] = useState(false);
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
 
         setFormData({
             ...formData,
@@ -27,77 +21,85 @@ function CreatePostForm() {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const validationErrors = {};
-
-    if (!formData.firstName.trim()) {
-        validationErrors.firstName = 'First name is required';
-    }
-    if (!formData.lastName.trim()) {
-        validationErrors.lastName = 'Last name is required';
-    }
-    if (!formData.email.trim()) {
-        validationErrors.email = 'Email is required';
-    }
-    if (!formData.message.trim()) {
-        validationErrors.message = 'Message is required';
-    }
-
-        if (Object.keys (validationErrors). length === 0) {
-            const db = getDatabase();
-    
-            const usersRef = ref(db,'users');
-    
-        firebasePush(usersRef, formData)
-            .then(() => {
-                setAlertOpen(true);
-                setFormData({
-                    imgURL: '',
-                    userName: '',
-                    cardText: '',
-                    alt: '',
-                    date: ''
-                });
-            })
-            .catch((error) => {
-                console.error("Error writing to Firebase Database", error);
-            });
-    } else {
-        setErrors(validationErrors);
-    }
-};
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log('Form submitted:', formData);
+        setFormData({
+          imgURL: '',
+          userName: '',
+          cardText: '',
+          alt: '',
+          date: '',
+          season: ''
+        });
+      };
 
     return (
-        <form style={formStyles} onSubmit={handleSubmit}>
-            <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                    <TextField
-                        label="First Name"
-                        name="firstName"
-                        variant="outlined"
-                        fullWidth
-                        required
-                        value={formData.firstName}
+        <div>
+            <h2>Create Post</h2>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="imgURL">ImageURL:</label>
+                    <input
+                        type="hyperlink"
+                        id="imgURL"
+                        name="imgURL"
+                        value={formData.imgURL}
                         onChange={handleInputChange}
-                        error={!!errors.firstName}
-                        helperText={errors.firstName}
                     />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <TextField
-                        label="First Name"
-                        name="firstName"
-                        variant="outlined"
-                        fullWidth
-                        required
-                        value={formData.firstName}
+                </div>
+                <div>
+                    <label htmlFor="userName">Username:</label>
+                    <input
+                        type="text"
+                        id="userName"
+                        name="userName"
+                        value={formData.userName}
                         onChange={handleInputChange}
-                        error={!!errors.firstName}
-                        helperText={errors.firstName}
                     />
-                </Grid>
-            </Grid>
-        </form>
+                </div>
+                <div>
+                    <label htmlFor="cardText">Description:</label>
+                    <input
+                        type="text"
+                        id="cardText"
+                        name="cardText"
+                        value={formData.cardText}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="alt">Alternative text:</label>
+                    <input
+                        type="text"
+                        id="alt"
+                        name="alt"
+                        value={formData.alt}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="date">Date:</label>
+                    <input
+                        type="text"
+                        id="date"
+                        name="date"
+                        value={formData.date}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="season">Season:</label>
+                    <input
+                        type="text"
+                        id="season"
+                        name="season"
+                        value={formData.season}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     );
 }

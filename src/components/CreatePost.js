@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { TextField, Grid, Button, Typography } from '@mui/material';
-import { ref, getDatabase, set as firebaseSet, push as firebasePush } from 'firebase/database'
+import { TextField, Grid } from '@mui/material';
+import { ref, getDatabase, push as firebasePush } from 'firebase/database'
 
+function LoginForm() {
+    const formStyles = {
+        padding: '2rem'
+    }
 
-function loginForm() {
-    const [formData, setFromData] = useState({
+    const [formData, setFormData] = useState({
         imgURL: '',
         userName: '',
         cardText: '',

@@ -9,14 +9,14 @@ import { SearchForm } from './Search.js';
 
 import DEFAULT_USERS from '../data/firebase.json';
 
-export default function App(props) {
+export function App(props) {
 
   // Sign in User
   const [setCurrentUser] = useState(DEFAULT_USERS[0])
   const navigateTo = useNavigate();
 
-  useEffect(() => {
-    loginUser(DEFAULT_USERS[1])
+  /* useEffect(() => {
+    loginUser(DEFAULT_USERS[0])
   }, [])
 
   const loginUser = (userObj) => {
@@ -25,7 +25,7 @@ export default function App(props) {
     if(userObj.userId !== null) {
       navigateTo('/chat/general');
     }
-  }
+  }*/
 
   /* 
                 <Routes>
@@ -38,10 +38,11 @@ export default function App(props) {
 
   return (
         <div>
-             <Navbar />
-             <main>
-  
-             </main>
+             {/* <Navbar /> */}
+              {/*<Home/>*/}
+              <SignInPage/>
         </div>
   );
 }
+
+export default App;

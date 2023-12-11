@@ -16,7 +16,7 @@ export function App(props) {
   const navigateTo = useNavigate();
 
   /* useEffect(() => {
-    loginUser(DEFAULT_USERS[1])
+    loginUser(DEFAULT_USERS[0])
   }, [])
 
   const loginUser = (userObj) => {
@@ -25,7 +25,7 @@ export function App(props) {
     if(userObj.userId !== null) {
       navigateTo('/chat/general');
     }
-  } */
+  }*/
 
   /* 
                 <Routes>
@@ -40,7 +40,7 @@ export function App(props) {
         <div>
              {/* <Navbar /> */}
               {/*<Home/>*/}
-              <
+              <SignInPage/>
         </div>
   );
 }

@@ -1,25 +1,10 @@
 import React from 'react';
-
+import {Navbar} from './Navbar.js';
 export function SearchForm (props) {
   return (
     <body>
       <header>
-        <div className="head">
-          <h1>Out-Of-Fits</h1>
-          <h2>Your UW Campus Thrift Community & Marketplace</h2>
-        </div>
-
-        <div className="nav">
-        <nav>
-          <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
-          <label for="nav-toggle" className="dropdown-btn">&#9776; Menu</label>
-          <ul>
-            <li><a href="login.js">Main Page</a></li>
-            <li><a href="search.js">Search</a></li>
-            <li><a href="posts.js">Post Fits</a></li>
-          </ul>
-        </nav>
-      </div>
+        <Navbar/>
     </header>
       <main>
         <section id="filters">

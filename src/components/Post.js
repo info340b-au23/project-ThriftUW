@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { LoginForm } from './CreatePost.js'
+import { LoginForm } from './CreatePost.js';
+import {Navbar} from './Navbar.js';
 
 
 export function Post (props) {
@@ -25,21 +26,7 @@ export function Post (props) {
     return (
         <div>
         <header>
-          <div>
-            <h1>Out-Of-Fits</h1>
-            <h2>Your UW Campus Thrift Community & Marketplace</h2>
-          </div>
-          <nav>
-            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
-            <label htmlFor="nav-toggle" className="dropdown-btn">
-              &#9776; Menu
-            </label>
-            <ul>
-              <li><a href="login.js">Main Page</a></li>
-              <li><a href="search.js">Search</a></li>
-              <li><a href="posts.js">Post Fits</a></li>
-            </ul>
-          </nav>
+            <Navbar/>
         </header>
   
         <main>

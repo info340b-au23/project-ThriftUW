@@ -1,6 +1,7 @@
 import React from "react";
 import { Post } from './Post.js';
 import {Navbar} from './Navbar.js';
+import {CreateStaticPost} from './CreatePost.js';
 
 export function Home(props){
     
@@ -19,12 +20,4 @@ export function Home(props){
     );
 }
 
-export function Footer() {
-
-    return (
-        <div className="container">
-            <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
-        </div>
-    )
-}
 

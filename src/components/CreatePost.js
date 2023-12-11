@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { TextField, Grid, Button, Typography } from '@mui/material';
+import { ref, getDatabase, set as firebaseSet, push as firebasePush } from 'firebase/database'
 
-
-function loginForm() {
+export function LoginForm() {
     const [formData, setFromData] = useState({
         imgURL: '',
         userName: '',

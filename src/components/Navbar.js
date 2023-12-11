@@ -28,22 +28,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* <div>
-        <h1>Out-Of-Fits</h1>
-        <h2>Your UW Campus Thrift Community & Marketplace</h2>
-    </div>
-
-     /* <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="/loggedIn.js">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <NavLink to="/main"> Main </NavLink>
-            <NavLink to="/search">Search </NavLink>
-            <NavLink to="/post"> Post </NavLink>
-
-          </Nav>
-        </Container>
-      </Navbar> */ */}
     </>
   );
 }

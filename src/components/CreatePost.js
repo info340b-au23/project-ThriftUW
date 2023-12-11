@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { TextField, Grid, Button, Typography } from '@mui/material';
 import { ref, getDatabase, set as firebaseSet, push as firebasePush } from 'firebase/database'
 
-export function LoginForm() {
+
+function loginForm() {
     const [formData, setFromData] = useState({
         imgURL: '',
         userName: '',
@@ -17,6 +18,7 @@ export function LoginForm() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+
         setFormData({
             ...formData,
             [name]: value,

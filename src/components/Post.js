@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { LoginForm } from './CreatePost.js'
+import { LoginForm } from './CreatePost.js';
+import {Navbar} from './Navbar.js';
 
 
 export function Post (props) {
@@ -25,7 +26,7 @@ export function Post (props) {
     return (
         <div>
         <header>
-
+            <Navbar/>
         </header>
   
         <main>

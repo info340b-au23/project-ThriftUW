@@ -11,7 +11,7 @@ export function Navbar() {
         <h2>Your UW Campus Thrift Community & Marketplace</h2>
     </div>
 
-      <Navbar bg="dark" data-bs-theme="dark">
+     /* <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/loggedIn.js">Navbar</Navbar.Brand>
           <Nav className="me-auto">
@@ -20,7 +20,7 @@ export function Navbar() {
             <Nav.Link href="/post.js">Post</Nav.Link>
           </Nav>
         </Container>
-      </Navbar>
+      </Navbar> */
     </>
   );
 }

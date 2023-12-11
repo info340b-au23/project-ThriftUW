@@ -1,11 +1,10 @@
 import React from 'react';
-
+import {Navbar} from './Navbar.js';
 export function SearchForm (props) {
   return (
     <body>
       <header>
-
-      </div>
+        <Navbar/>
     </header>
       <main>
         <section id="filters">

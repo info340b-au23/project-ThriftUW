@@ -1,12 +1,13 @@
 import React from "react";
-import { Post } from './Post.js'
+import { Post } from './Post.js';
+import {Navbar} from './Navbar.js';
 
 export function Home(props){
     
     return (
         <body>
             <header>
-
+                <Navbar/>
             </header>
             <main>
                 <section id="Posts">

@@ -31,11 +31,11 @@ export function App(props) {
   return (
         <div>
               <Navbar/>
-              <Routes>
-              <Route path="/Main" element={<Home />} />
-              <Route path="/Search" element={<SearchForm />} />
-              <Route path="/Post" element={<Post />} />
-              </Routes>
+                <Routes>
+                <Route path="/Main" element={<Home />} />
+                <Route path="/Search" element={<SearchForm />} />
+                <Route path="/Post" element={<Post />} />
+                </Routes>
               <Footer/>
         </div>
   );

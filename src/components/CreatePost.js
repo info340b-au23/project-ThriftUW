@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { ref, getDatabase, push as firebasePush } from 'firebase/database'
 
 function CreatePostForm() {
@@ -100,4 +100,4 @@ function CreatePostForm() {
             </Grid>
         </form>
     );
-}
+}*/

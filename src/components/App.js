@@ -39,9 +39,7 @@ export default function App(props) {
   return (
         <div>
              <Navbar />
-             <main>
-  
-             </main>
+             
         </div>
   );
 }

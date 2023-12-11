@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { LoginForm } from './CreatePost.js';
 import {Navbar} from './Navbar.js';
-import {CreateStaticPost} from './CreatePost.js';
+import { CreatePostForm } from './CreatePost.js';
 
 
 export function Post (props) {
@@ -28,7 +27,7 @@ export function Post (props) {
         <div>
         <main>
                 <div>
-                    {CreateStaticPost}
+                    {CreatePostForm}
                 </div>
         </main>
       </div>

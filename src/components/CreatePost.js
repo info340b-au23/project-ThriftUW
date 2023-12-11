@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CreatePostForm() {
+export function CreatePostForm() {
 
     const [formData, setFormData] = useState({
         imgURL: '',

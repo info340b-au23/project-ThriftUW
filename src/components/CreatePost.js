@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ref, getDatabase, push as firebasePush } from 'firebase/database'
 
 function CreatePostForm() {
 

@@ -5,7 +5,7 @@ export function SearchForm (props) {
   return (
     <body>
       <header>
-        <Navbar/>
+        {<Navbar/>}
     </header>
       <main>
         <section id="filters">

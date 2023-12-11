@@ -17,7 +17,7 @@ export function Home(props){
                     </div>
                 </section>
             </main>
-            
+
             <footer>
                 <Footer/>
             </footer>

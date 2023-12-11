@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { LoginForm } from './CreatePost.js';
 import {Navbar} from './Navbar.js';
-
+import staticPosts from '../data/staticPosts.json';
 
 export function Post (props) {
     const [likes, setLikes] = useState(0);
@@ -30,7 +30,7 @@ export function Post (props) {
                     {CreateStaticPost}
                 </div>
                 <div>
-                    {AddPost}
+                    
                 </div>
         </main>
       </div>
@@ -143,8 +143,8 @@ function AddPost () {
 }
 
 export function CreateStaticPost (props){
-    const {user, cardText, imgURL, alt, date} = props;
-
+    const {user, cardText, imgURL, alt, date} = staticPosts.props;
+    console.log(staticPosts);
     return(
         <div className="container posts">
             <div className="card border-light mb-3 mt-5 post">

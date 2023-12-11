@@ -170,4 +170,3 @@ export function SearchForm (props) {
   );
 };
 
-//export default searchForm;

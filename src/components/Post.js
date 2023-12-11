@@ -25,7 +25,7 @@ export function Post (props) {
 
     return (
         <div>
-            <main>
+        <main>
                 <div>
                     {CreateStaticPost}
                 </div>

@@ -4,9 +4,6 @@ import {Navbar} from './Navbar.js';
 export function SearchForm (props) {
   return (
     <body>
-      <header>
-        {<Navbar/>}
-    </header>
       <main>
         <section id="filters">
           <div className="filter-group">

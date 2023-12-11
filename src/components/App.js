@@ -6,6 +6,7 @@ import { Home }from './Main.js';
 import {Navbar} from './Navbar.js';
 import { Post } from './Post.js';
 import { SearchForm } from './Search.js';
+import {Footer} from './Main.js';
 
 import DEFAULT_USERS from '../data/firebase.json';
 
@@ -38,10 +39,9 @@ export function App(props) {
 
   return (
         <div>
-              <Navbar/> 
-              <Home/>
-              <Post/>
-              
+              <Navbar/>
+              <SearchForm/>
+              <Footer/>
         </div>
   );
 }

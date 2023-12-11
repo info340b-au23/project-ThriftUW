@@ -25,10 +25,6 @@ export function Post (props) {
 
     return (
         <div>
-        <header>
-            {/*<Navbar/>*/}
-        </header>
-  
         <main>
             <div>
                 {CreateStaticPost}

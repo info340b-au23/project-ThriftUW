@@ -7,7 +7,7 @@ export function Home(props){
     return (
         <body>
             <header>
-                {/*<Navbar/>*/}
+                {<Navbar/>}
             </header>
             <main>
                 <section id="Posts">

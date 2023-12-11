@@ -25,12 +25,14 @@ export function Post (props) {
 
     return (
         <div>
-            <div>
-                <CreateStaticPost/>
-            </div>
-            <div>
-                {/*AddPost*/}
-            </div>
+        <main>
+                <div>
+                    {CreateStaticPost}
+                </div>
+                <div>
+                    {AddPost}
+                </div>
+        </main>
       </div>
     );
 };

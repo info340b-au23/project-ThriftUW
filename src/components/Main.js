@@ -9,19 +9,13 @@ export function Home(props){
             <main>
                 <section id="Posts">
                     <div className="card-container">
-
                         <div className="card">
                             <Post />
                         </div>
-                        
                     </div>
                 </section>
             </main>
-
-            <footer>
-                <Footer/>
-            </footer>
-          </body>
+        </body>
     );
 }
 

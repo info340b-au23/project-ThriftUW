@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 
-function loginForm() {
-    const [formData, setFromData] = useState({
+function LoginForm() {
+    const [formData, setFormData] = useState({
         imgURL: '',
         userName: '',
         cardText: '',
@@ -16,6 +16,7 @@ function loginForm() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
+
         setFormData({
             ...formData,
             [name]: value,

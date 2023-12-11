@@ -38,9 +38,10 @@ export function App(props) {
 
   return (
         <div>
-             {/* <Navbar /> */}
-              {/*<Home/>*/}
+              <Navbar/> 
+              <Home/>
               <Post/>
+              
         </div>
   );
 }

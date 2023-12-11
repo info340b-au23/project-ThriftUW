@@ -25,24 +25,14 @@ export function Post (props) {
 
     return (
         <div>
-        <header>
-            {/*<Navbar/>*/}
-        </header>
-  
-        <main>
-            <div>
-                {CreateStaticPost}
-            </div>
-            <div>
-                {AddPost}
-            </div>
+            <main>
+                <div>
+                    {CreateStaticPost}
+                </div>
+                <div>
+                    {AddPost}
+                </div>
         </main>
-  
-        <footer>
-          <div className="container">
-            <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
-          </div>
-        </footer>
       </div>
     );
 };

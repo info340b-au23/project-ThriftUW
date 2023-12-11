@@ -169,11 +169,6 @@ export function SearchForm (props) {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="container">
-          <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
-        </div>
-      </footer>
     </body>
   );
 };

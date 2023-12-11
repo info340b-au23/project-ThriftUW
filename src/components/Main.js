@@ -6,9 +6,6 @@ export function Home(props){
     
     return (
         <body>
-            <header>
-                {/*<Navbar/>*/}
-            </header>
             <main>
                 <section id="Posts">
                     <div className="card-container">
@@ -20,12 +17,20 @@ export function Home(props){
                     </div>
                 </section>
             </main>
+            
             <footer>
-                <div className="container">
-                    <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
-                </div>
+                <Footer/>
             </footer>
           </body>
     );
+}
+
+export function Footer() {
+
+    return (
+        <div className="container">
+            <p>&copy; 2023 A ThriftUW project. All rights reserved.</p>
+        </div>
+    )
 }
 

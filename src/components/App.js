@@ -40,7 +40,7 @@ export function App(props) {
         <div>
              {/* <Navbar /> */}
               {/*<Home/>*/}
-              <SignInPage/>
+              <Post/>
         </div>
   );
 }

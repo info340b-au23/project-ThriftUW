@@ -26,7 +26,7 @@ export function Post (props) {
     return (
         <div>
         <header>
-            <Navbar/>
+            {/*<Navbar/>*/}
         </header>
   
         <main>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { TextField, Grid } from '@mui/material';
 import { ref, getDatabase, push as firebasePush } from 'firebase/database'
 
-function LoginForm() {
+function CreatePostForm() {
     const formStyles = {
         padding: '2rem'
     }

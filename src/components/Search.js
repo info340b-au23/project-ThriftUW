@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar} from './Navbar.js';
+
 export function SearchForm (props) {
   return (
     <body>

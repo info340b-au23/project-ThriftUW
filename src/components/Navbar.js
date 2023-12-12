@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import '../index.css';
+import { Home } from './Main.js';
+import { Posts } from './Post.js';
+import { SearchForm } from './Search.js';
 
 
 export function Navbar() {
@@ -17,13 +20,13 @@ export function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/main">Main</NavLink>
+                <NavLink className="nav-link" to="/home">Main</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="search">Search</NavLink>
+                <NavLink className="nav-link" to="/searchform">Search</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="post">Post</NavLink>
+                <NavLink className="nav-link" to="/post">Post</NavLink>
               </li>
 
             </ul>

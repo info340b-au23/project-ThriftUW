@@ -1,48 +1,36 @@
 import React from 'react';
+import { getAuth, EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import { getDatabase, ref, set as firebaseSet, onValue } from 'firebase/database';
 
-import Dropdown from 'react-bootstrap/Dropdown';
-
-import DEFAULT_USERS from '../data/firebase.json';
-
-export function SignInPage(props) {
+export default function SignInPage(props) {
     const currentUser = props.currentUser;
-    const loginFunction = props.loginCallback;
+    const loginCallback = props.loginCallback;
+    const loginFunction = getAuth();
 
-    const handleClick = (event) => {
-        const whichUser = event.currentTarget.name
-        console.log(whichUser);
-        const selectedUserObj = DEFAULT_USERS.filter((userObj) => userObj.userId === whichUser)[0] || DEFAULT_USERS[0]
+    function writeUserData(currentUser) {
+        const db = getDatabase();
+        firebaseSet(ref(db, 'users/' + currentUser.userId), {
+          displayName: currentUser.displayName,
+          email: currentUser.email
+        });
+      }
 
-        loginFunction(selectedUserObj)
+    const firebaseUIConfig = {
+        options: [
+            GoogleAuthProvider.PROVIDER_ID,
+            {provider: EmailAuthProvider.PROVIDER_ID, requiredDisplayName: true},],
+            flow: 'popup',
+            credHelp: 'none',
+            callbacks: {signInSuccessWithAuthResult: () => {return false;}}
     }
 
-    const userButtons = DEFAULT_USERS.map((userObj) => {
-        if (userObj.userId === currentUser.userId){
-            return null;
-        }
-        return (
-            <Dropdown.Item className="user-icon" key={userObj.userName}
-                name={userObj.userId} onClick={handleClick}
-            >
-                <img src={userObj.userImg} alt={userObj.userName + " avatar"} />
-                {userObj.userName}
-            </Dropdown.Item>
-        )
-    })
-
     return (
-        <div className="card bg-light">
-            <div className="container card-body">
-                <Dropdown>
-                    <Dropdown.Toggle variant="light">
-                        <img src={currentUser.userImg} alt={currentUser.userName + " avatar"} />
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        {userButtons}
-                    </Dropdown.Menu>
-                </Dropdown>
+        <div className="container mt-5">
+            <div className="text-center align-items-center login-title">
+                <h1 className="display-3 fw-bold">Log in to UWTHRIFT</h1>
             </div>
+            <StyledFirebaseAuth uiConfig = {firebaseUIConfig} firebaseAuth={loginFunction} />
         </div>
-    )
-        
+    );
 }

@@ -9,13 +9,26 @@ import { Posts } from './Post.js';
 import { SearchForm } from './Search.js';
 import { Footer } from './Footer.js';
 
-
-import staticPosts from "../data/staticPosts.json";
-
 import DEFAULT_USERS from '../data/firebase.json';
 
 
 export function App(props) {
+  //static post data
+  const [staticPostData, setStaticPostData] = useState([]);
+
+  useEffect(() => {
+    fetch('staticPosts.json')
+      .then(function(response) {
+        const dataPromise = response.json()
+        return dataPromise;
+      })
+      .then(function(data) {
+        setStaticPostData(data);
+      })
+      .catch((error) => {
+        console.log("In the catch block: ", error)
+      })
+  }, [])
 
   // Sign in User
   const [currentUser, setCurrentUser] = useState(null);

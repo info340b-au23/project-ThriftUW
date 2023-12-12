@@ -25,12 +25,12 @@ export function Post (props) {
 
     return (
         <div>
-        <main>
+            <main>
                 <div>
-                    {CreatePostForm}
+                    <CreatePostForm />
                 </div>
-        </main>
-      </div>
+            </main>
+        </div>
     );
 };
 

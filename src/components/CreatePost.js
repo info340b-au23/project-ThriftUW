@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
+import { getDatabase, ref, set as firebaseSet, push as firebasePush } from 'firebase/database';
 
 export function CreatePostForm() {
-
     const [formData, setFormData] = useState({
         imgURL: '',
         userName: '',
         cardText: '',
         alt: '',
-        date: '',
-        season: ''
+        date: ''
 
     });
+
+    const [errors, setErrors] = useState({});
+    const [isAlertOpen, setAlertOpen] = useState(false);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -23,20 +25,49 @@ export function CreatePostForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Form submitted:', formData);
-        setFormData({
-          imgURL: '',
-          userName: '',
-          cardText: '',
-          alt: '',
-          date: '',
-          season: ''
-        });
-      };
+        const validationErrors = {};
 
+        //Check if required empty
+        if(!formData.imgURL.trim()) {
+            validationErrors.imgURL = 'Image URL required';
+        }
+        if(!formData.userName.trim()) {
+            validationErrors.userName = 'Username required';
+        }
+        if(!formData.cardText.trim()) {
+            validationErrors.cardText = 'Decription required';
+        }
+        if(!formData.alt.trim()) {
+            validationErrors.alt = 'Alt text required';
+        }
+        if(!formData.date.trim()) {
+            validationErrors.date = 'Date required';
+        }
+
+        if (Object.keys(validationErrors).length === 0) {
+            const db = getDatabase();
+            const userRef = ref(db, 'users');
+
+            firebasePush(userRef, formData)
+                .then(() => {
+                    setAlertOpen(true);
+                    setFormData({
+                        imgURL: '',
+                        userName: '',
+                        cardText: '',
+                        alt: '',
+                        date: ''
+                    });
+                })
+                .catch((error) => {
+                    console.error("Error writing to firebase database", error);
+                });
+        } else {
+            setErrors(validationErrors);
+        }
+    };
     return (
         <div>
-            <h2>Create Post</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="imgURL">ImageURL:</label>
@@ -85,16 +116,6 @@ export function CreatePostForm() {
                         id="date"
                         name="date"
                         value={formData.date}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="season">Season:</label>
-                    <input
-                        type="text"
-                        id="season"
-                        name="season"
-                        value={formData.season}
                         onChange={handleInputChange}
                     />
                 </div>

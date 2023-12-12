@@ -10,6 +10,7 @@ import {Footer} from './Footer.js';
 
 
 //just for funsies
+import staticPosts from "../data/staticPosts.json";
 //
 import DEFAULT_USERS from '../data/firebase.json';
 
@@ -31,17 +32,17 @@ export function App(props) {
       navigateTo('/chat/general');
     }
   }*/
+  
 
   return (
         <div>
-          
               <Navbar/>
+
                 <Routes>
                   <Route path="/Main" element={<Home />} />
                   <Route path="/Search" element={<SearchForm />} />
-                  <Route path="/Post" element={<Posts />} />
+                  <Route path="/Post" element={<Posts staticPosts={staticPosts}/>} />
                 </Routes>
-
                 
               <Footer/>
         </div>

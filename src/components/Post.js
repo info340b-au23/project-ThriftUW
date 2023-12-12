@@ -8,11 +8,16 @@ export function Posts (props) {
     const [clicked, setClicked] = useState(false);
 
     let StaticPosts = props.staticPosts[0].posts; // Handle if not provided a prop
-    console.log(StaticPosts)
-    let Posts = StaticPosts.map((IndPost) => {
+    let PostsArray = Object.values(StaticPosts);
+
+    /*let Posts = StaticPosts.map((IndPost) => {
         console.log()
       return <StaticPost post={IndPost} />;
-    }); 
+    });*/
+    
+    let Posts = PostsArray.map((IndPost, index) => {
+        return <StaticPost key={index} post={IndPost} />;
+    });
 
     //get post, map existing comments and add new comment
     const handleSubmit = () => {

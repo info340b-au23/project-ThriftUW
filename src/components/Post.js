@@ -14,26 +14,6 @@ export function Posts (props) {
         return <StaticPost key={index} post={IndPost} />;
     });
 
-    //get post, map existing comments and add new comment
-    /*const handleSubmit = () => {
-
-        const handleClick = () => {
-            setClicked(true);
-
-            if (clicked) {
-                setLikes(likes+1);
-            } else {
-                setLikes(likes-1);
-            }
-            setClicked(false);
-        }
-    }
-
-    const handleCommentSubmit = (newComment) => {
-        setComments([...comments, newComment])
-    }*/
-
-
     return (
         <div>
             <div>
@@ -56,9 +36,7 @@ export function StaticPost (props){
                     <div className="card-title"> <small className="text-muted">{userName}</small></div>
                     <div className="card-text">{cardText}</div>
                     <a href="" className="btn">❤️</a>
-
-
-
+                    <a href="" className="btn">💬</a>
                     <div className="card-footer bg-transparent"></div>
                     <p className="card-text"><small className="text-muted">{date}</small></p>
                 </div>

@@ -3,6 +3,7 @@ import staticPosts from "../data/staticPosts.json";
 import { CreatePostForm } from './CreatePost';
 import {Posts} from './Post.js';
 
+
 export function FilterForm(props) {
 
   // State for selected season
@@ -16,6 +17,7 @@ export function FilterForm(props) {
 
 
   // Function to filter posts by season
+  // it is passing an empty array
   const filterBySeason = (selectedSeason) => {
     // access the posts object inside of the json
     const posts = staticPosts[0].posts;

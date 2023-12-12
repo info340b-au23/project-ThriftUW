@@ -15,7 +15,7 @@ export function Posts (props) {
     });
 
     //get post, map existing comments and add new comment
-    const handleSubmit = () => {
+    /*const handleSubmit = () => {
 
         const handleClick = () => {
             setClicked(true);
@@ -31,13 +31,15 @@ export function Posts (props) {
 
     const handleCommentSubmit = (newComment) => {
         setComments([...comments, newComment])
-    }
+    }*/
 
 
     return (
         <div>
             <div>
+                <CreatePostForm/>
                 {Posts}
+
             </div>
       </div>
     );
@@ -57,15 +59,7 @@ export function StaticPost (props){
                     <div className="card-text">{cardText}</div>
                     <a href="" className="btn">❤️</a>
 
-                    <form onSubmit={handleCommentSubmit}>
-                        <input
-                        type="text"
-                        placeholder="Write a comment..."
-                        value={commentText}
-                        onChange={(e) => setCommentText(e.target.value)}
-                        />
-                        <button type="submit">Post</button>
-                    </form>
+
 
                     <div className="card-footer bg-transparent"></div>
                     <p className="card-text"><small className="text-muted">{date}</small></p>

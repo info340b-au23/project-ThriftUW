@@ -9,7 +9,7 @@
                 "alt": "A person posing in a neutral colored outfit.",
                 "date": "December 9th",
                 "filter": {
-                    "season": "fall"
+                    "season": "Winter"
                 },
                 "isLiked": false,
                 "comments": {
@@ -31,6 +31,9 @@
                 "cardText": "Cool pants, super pants cool like super cool",
                 "alt": "A picture of cool pants",
                 "date": "November 28th",
+                "filter": {
+                    "season": "Fall"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {
@@ -51,6 +54,9 @@
                 "cardText": "Cute floral midi skirts ",
                 "alt": "A picture of two teenage girls in summer floral midi skirts",
                 "date": "May 31st",
+                "filter": {
+                    "season": "Spring"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {
@@ -69,7 +75,10 @@
                 "userName": "etzwang",
                 "cardText": "me and my shorts",
                 "alt": "a pair of cool shorts",
-                "date": "December 9th",
+                "date": "June 9th",
+                "filter": {
+                    "season": "Summer"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {
@@ -89,7 +98,10 @@
                 "userName": "scoobyfruitsnacks",
                 "cardText": "These linen pants are so breathable and flowy",
                 "alt": "a pair of linen pants",
-                "date": "December 9th",
+                "date": "April 9th",
+                "filter": {
+                    "season": "Spring"
+                },
                 "isLiked": 88,
                 "comments": {
                     "comment1": {
@@ -109,7 +121,10 @@
                 "userName": "oreocakeyum",
                 "cardText": "These pants are so funky and bright, I thrifted them, aren't they cool!",
                 "alt": "a pair of funky and bright pants",
-                "date": "December 9th",
+                "date": "May 9th",
+                "filter": {
+                    "season": "Spring"
+                },
                 "isLiked": 88,
                 "comments": {
                     "comment1": {
@@ -129,7 +144,10 @@
                 "userName": "granolabar346",
                 "cardText": "Jean skirts are so in recenty I want to get one for myself!",
                 "alt": "a pair of jean skirts",
-                "date": "December 9th",
+                "date": "August 9th",
+                "filter": {
+                    "season": "Summer"
+                },
                 "isLiked": 88,
                 "comments": {
                     "comment1": {
@@ -149,7 +167,10 @@
                 "userName": "etzwang",
                 "cardText": "Flowy floral skirts have been all over my fashion pages! I thrifted this at the fremont market!",
                 "alt": "a flowy floral skirt",
-                "date": "December 9th",
+                "date": "December 12th",
+                "filter": {
+                    "season": "Winter"
+                },
                 "isLiked": 88,
                 "comments": {
                     "comment1": {
@@ -170,6 +191,9 @@
                 "cardText": "This are me in my new linen pants, my girlfriend bought them for me. Have been living in them! Bought them on sale for $25.00. Mens Linen Pants #summer #linen #pants #brown #H&M",
                 "alt": "Man wearing beige colored linen pants",
                 "date": "October 14th",
+                "filter": {
+                    "season": "Fall"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {
@@ -190,6 +214,9 @@
                 "cardText": "Found these awesome thrifted barely used zara mens jean shorts. Love the color. #summer #jean #shorts #zara #thrifted",
                 "alt": "Man wearing brown shorts",
                 "date": "December 9th",
+                "filter": {
+                    "season": "Winter"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {
@@ -210,6 +237,9 @@
                 "cardText": "Kinda interesting shorts. The graphic is what spoke to me. I might sell them though. Hit me up if you are interested in buying! #summer #shorts #graphics #brown",
                 "alt": "Brown Graphic Shorts",
                 "date": "December 9th",
+                "filter": {
+                    "season": "Winter"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {
@@ -230,6 +260,9 @@
                 "cardText": "This green is a dope color. I found it at the vintage market near capitol hill. DM me up for the name. Mens Green Shorts #summer #green #shorts #cargo",
                 "alt": "Man wearing green cargo shorts",
                 "date": "November 29th",
+                "filter": {
+                    "season": "Fall"
+                },
                 "isLiked": false,
                 "comments": {
                     "comment1": {

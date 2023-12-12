@@ -4,11 +4,15 @@ import { Routes, Route, useNavigate} from 'react-router-dom';
 import {SignInPage} from './Login.js';
 import { Home }from './Main.js';
 import {Navbar} from './Navbar.js';
-import { Post } from './Post.js';
+import { Posts } from './Post.js';
 import { SearchForm } from './Search.js';
 import {Footer} from './Footer.js';
 
+
+//just for funsies
+//
 import DEFAULT_USERS from '../data/firebase.json';
+
 
 export function App(props) {
 
@@ -30,12 +34,15 @@ export function App(props) {
 
   return (
         <div>
+          
               <Navbar/>
                 <Routes>
-                <Route path="/Main" element={<Home />} />
-                <Route path="/Search" element={<SearchForm />} />
-                <Route path="/Post" element={<Post />} />
+                  <Route path="/Main" element={<Home />} />
+                  <Route path="/Search" element={<SearchForm />} />
+                  <Route path="/Post" element={<Posts />} />
                 </Routes>
+
+                
               <Footer/>
         </div>
   );

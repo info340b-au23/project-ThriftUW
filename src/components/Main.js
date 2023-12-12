@@ -1,7 +1,7 @@
 import React from "react";
 import { Post } from './Post.js';
 import {Navbar} from './Navbar.js';
-import {CreateStaticPost} from './CreatePost.js';
+import {Posts} from './Post.js'
 
 export function Home(props){
     
@@ -11,7 +11,7 @@ export function Home(props){
                 <section id="Posts">
                     <div className="card-container">
                         <div className="card">
-                            <Post />
+                            <Posts />
                         </div>
                     </div>
                 </section>

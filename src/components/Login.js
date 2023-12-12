@@ -1,8 +1,9 @@
 import React from 'react';
 import { getAuth, EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
-//imported library
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-
+//Test Login
+//Username: b@b.com
+//password: password
 
 export function SignInPage(props) {
     const auth = getAuth();

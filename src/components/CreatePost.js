@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { getDatabase, ref, set as firebaseSet, push as firebasePush } from 'firebase/database';
+//imported library
+import Button from 'react-bootstrap/Button'
 
 export function CreatePostForm() {
     const [formData, setFormData] = useState({
@@ -119,7 +121,7 @@ export function CreatePostForm() {
                         onChange={handleInputChange}
                     />
                 </div>
-                <button type="submit">Submit</button>
+                <Button variant="success">Submit</Button>{' '}
             </form>
         </div>
     );

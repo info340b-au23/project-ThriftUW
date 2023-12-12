@@ -35,9 +35,7 @@ export function FilterForm(props) {
       </select>
 
       <div>
-        // more to add here
-        // Will need to use CreateStatic post and apply posts
-        <Post filteredPosts={filteredPosts}/>
+        <Posts filteredPosts={filteredPosts}/>
       </div>
     </div>
   )

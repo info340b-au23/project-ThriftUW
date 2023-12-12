@@ -9,7 +9,7 @@ export function SearchForm (props) {
       <main>
         <section id="filters">
 
-
+        <FilterForm/>
           
         </section>
 

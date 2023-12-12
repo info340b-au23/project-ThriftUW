@@ -25,13 +25,13 @@ export function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/home">Main</NavLink>
+                <NavLink className="nav-link" to="/home">Post</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/searchform">Search</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/post">Post</NavLink>
+                <NavLink className="nav-link" to="/post">Main</NavLink>
               </li>
 
             </ul>

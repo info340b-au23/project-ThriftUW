@@ -37,9 +37,7 @@ export function Posts (props) {
     return (
         <div>
             <div>
-                <CreatePostForm/>
                 {Posts}
-
             </div>
       </div>
     );

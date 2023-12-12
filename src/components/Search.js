@@ -8,7 +8,7 @@ export function SearchForm (props) {
     <body>
       <main>
         <section id="filters">
-            <FilterForm/ >
+            <FilterForm/>
         </section>
 
 

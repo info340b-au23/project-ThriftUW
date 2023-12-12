@@ -3,7 +3,7 @@
     {
         "posts":{
             "post1":{
-                "imgURL": "../img/outfit1.jpeg",
+                "imgURL": "../public/img/outfit1.jpeg",
                 "userName": "antan",
                 "cardText": "Neutrals",
                 "alt": "A person posing in a neutral colored outfit.",
@@ -23,6 +23,7 @@
                     }
 
                 }
+            
             
             },
             "post2": {
@@ -277,6 +278,8 @@
                 }
 
             }
+        
+
         }
     }
 ]

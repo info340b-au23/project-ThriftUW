@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import staticPosts from "../data/staticPosts.json";
 import { CreatePostForm } from './CreatePost';
-
+import {Posts} from './Post.js';
 
 export function FilterForm(props) {
 
@@ -35,8 +35,7 @@ export function FilterForm(props) {
       </select>
 
       <div>
-        // more to add here
-        // Will need to use CreateStatic post and apply posts
+        <Posts filteredPosts={filteredPosts}/>
       </div>
     </div>
   )

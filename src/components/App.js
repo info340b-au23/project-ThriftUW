@@ -9,7 +9,6 @@ import { Posts } from './Post.js';
 import { SearchForm } from './Search.js';
 import { Footer } from './Footer.js';
 
-import DEFAULT_USERS from '../data/firebase.json';
 import staticPosts from "../data/staticPosts.json";
 
 

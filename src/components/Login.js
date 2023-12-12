@@ -3,6 +3,7 @@ import { getAuth, EmailAuthProvider, GoogleAuthProvider } from "firebase/auth";
 //imported library
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
+
 export function SignInPage(props) {
     const auth = getAuth();
     const loginCallback = props.loginCallback;
@@ -16,7 +17,7 @@ export function SignInPage(props) {
         ],
         signInFlow: 'popup',
         callbacks: {signInSuccessWithAuthResult: () => true},
-        signInSuccessUrl: ('/locator'),
+        signInSuccessUrl: ('/post'),
         credentialHelper: 'none'
     }
 

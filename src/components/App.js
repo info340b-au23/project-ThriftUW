@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-import SignInPage from './Login.js';
+import { SignInPage } from './Login.js';
 import { Home }from './Main.js';
 import {Navbar} from './Navbar.js';
 import { Posts } from './Post.js';
@@ -56,7 +56,7 @@ export function App(props) {
               <Navbar/>
 
                 <Routes>
-                  <Route path="/" element={<SignInPage currentUser={currentUser} loginCallback={loginUser}/>} />
+                  <Route path="/" element={<SignInPage />} />
                   <Route path="/Main" element={<Home />} />
                   <Route path="/Search" element={<SearchForm />} />
                   <Route path="/Post" element={<Posts staticPosts={staticPosts}/>} />

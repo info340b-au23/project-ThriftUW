@@ -4,7 +4,7 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 export function SignInPage(props) {
     const auth = getAuth();
-    //const loginCallback = props.loginCallback;
+    const loginCallback = props.loginCallback;
 
     const firebaseUIConfig = {
         signInOptions: [

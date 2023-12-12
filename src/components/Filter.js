@@ -18,7 +18,8 @@ export function FilterForm(props) {
 
 
   // Function to filter posts by season
-  // it is passing an empty array
+
+  // it is passing an empty array, only part that doesn't work
   const filterBySeason = (selectedSeason) => {
     // access the posts object inside of the json
     const posts = staticPosts[0].posts;
@@ -29,7 +30,7 @@ export function FilterForm(props) {
   const filteredPosts = filterBySeason();
 
   return (
-    <div>
+    <div className = "loginHead">
       <select value={selectedSeason} onChange={handleSeasonChange}>
         <option value="">Winter</option>
         <option>Spring</option>
@@ -38,7 +39,7 @@ export function FilterForm(props) {
       </select>
 
       <div>
-        <Posts filteredPosts={filteredPosts}/>
+        <Posts staticPosts={staticPosts}/>
       </div>
     </div>
   )

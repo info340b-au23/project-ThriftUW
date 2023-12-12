@@ -1,96 +1,16 @@
 import React from 'react';
 import {Navbar} from './Navbar.js';
 import {CreateStaticPost} from './CreatePost.js';
+import {FilterForm} from './Filter.js';
 
 export function SearchForm (props) {
   return (
     <body>
       <main>
         <section id="filters">
-          <div className="filter-group">
-            <label for="season">Season:</label>
-            <select id="season">
-              <option value="all">All</option>
-              <option value="summer">Summer</option>
-              <option value="fall">Fall</option>
-              <option value="winter">Winter</option>
-              <option value="spring">Spring</option>
-            </select>
-          </div>
-          <div className="filter-group">
-            <label for="grade-level">Grade Level:</label>
-            <select id="grade-level">
-              <option value="all">All</option>
-              <option value="freshman">Freshman</option>
-              <option value="sophomore">Sophomore</option>
-              <option value="junior">Junior</option>
-              <option value="senior">Senior</option>
-            </select>
-          </div>
-          <div className="filter-group">
-            <label for="size">Size:</label>
-            <select id="size">
-              <option value="all">All</option>
-              <option value="XXS">XXS</option>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-              <option value="0">0</option>
-              <option value="2">2</option>
-              <option value="4">4</option>
-              <option value="6">6</option>
-              <option value="8">8</option>
-              <option value="10">10</option>
-              <option value="12">12</option>
-            </select>
-          </div>
-          <div className="filter-group">
-            <label for="color">Color:</label>
-            <select id="color">
-              <option value="all">All</option>
-              <option value="brown">Brown</option>
-              <option value="white">White</option>
-              <option value="black">Black</option>
-              <option value="green">Green</option>
-              <option value="blue">Blue</option>
-              <option value="purple">Purple</option>
-              <option value="yellow">Yellow</option>
-              <option value="orange">Orange</option>
-              <option value="red">Red</option>
-              <option value="gold">Gold</option>
-              <option value="silver">Silver</option>
-              <option value="pink">Pink</option>
-            </select>
-          </div>
-          <div className="filter-group">
-            <label for="brands">Popular Brands:</label>
-            <select id="brands">
-              <option value="all">All</option>
-              <option value="urban outfitters">Urban Outfitters</option>
-              <option value="nike">Nike</option>
-              <option value="adidas">Adidas</option>
-              <option value="brandy melville">Brandy Melville</option>
-              <option value="pacsun">Pacsun"</option>
-              <option value="H&M">H&M</option>
-              <option value="princess polly">Princess Polly</option>
-              <option value="abercrombie & fitch">Abercrombie & Fitch</option>
-              <option value="zara">Zara</option>
-            </select>
-          </div>
-          <div className="filter-group">
-            <label for="condition">Condition:</label>
-            <select id="condition">
-              <option value="all">All</option>
-              <option value="brand new">Brand New</option>
-              <option value="like new">Like New</option>
-              <option value="used great">Used: Great</option>
-              <option value="used good">Used: Good</option>
-              <option value="used fair">Used: Fair</option>
-            </select>
-          </div>
+
+
+          
         </section>
 
 

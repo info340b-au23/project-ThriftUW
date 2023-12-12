@@ -11,7 +11,7 @@ export function Home(props){
                 <section id="Posts">
                     <div className="card-container">
                         <div className="card">
-                            <Posts />
+                            <Post />
                         </div>
                     </div>
                 </section>
